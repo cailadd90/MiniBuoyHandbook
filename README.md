@@ -1,1 +1,1 @@
-# MiniBuoyApp
+# MiniBuoyHandbook
