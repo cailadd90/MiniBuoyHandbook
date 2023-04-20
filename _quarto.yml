@@ -3,14 +3,25 @@ project:
   output-dir: docs
 
 book:
-  title: "MiniBuoyHandbook"
-  author: "Jane Doe"
-  date: "4/19/2023"
+  title: "The Mini Buoy Handbook"
+  subtitle: 'Assessing hydrodynamics in intertidal environments'
+  author: 
+    - Thorsten Balke
+    - Cai Ladd
+    - Marie-Christin Wimmler
+    - Alejandra Vovides
+    
+  date: "04/19/2023"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
+    - chapters/intro.qmd
+    - chapters/assembly.qmd
+    - chapters/configuration.qmd
+    - chapters/deployment.qmd
+    - chapters/export.qmd
+    - chapters/analysis.qmd
     - references.qmd
+  cover-image: Cover.png
 
 bibliography: references.bib
 
@@ -19,6 +30,4 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt
-
-
-
+    
