@@ -1,0 +1,33 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "The Mini Buoy Handbook"
+  subtitle: 'Assessing hydrodynamics in intertidal environments'
+  author: 
+    - Thorsten Balke
+    - Cai Ladd
+    - Marie-Christin Wimmler
+    - Alejandra Vovides
+    
+  date: "04/19/2023"
+  chapters:
+    - index.qmd
+    - chapters/intro.qmd
+    - chapters/assembly.qmd
+    - chapters/configuration.qmd
+    - chapters/deployment.qmd
+    - chapters/export.qmd
+    - chapters/analysis.qmd
+    - references.qmd
+  cover-image: Cover.png
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+    

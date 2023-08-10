@@ -1,0 +1,55 @@
+# Export {#sec-export}
+
+After a deployment, the data can be retrieved from the logger and exported as a .csv data table. It is important to save your data in the data format that can be recognised by the Mini Buoy App.
+
+##	MSR145
+
+To export acceleration data from the MSR145 B4 logger:
+
+1. Open the MSR software and double-click `Csv`
+
+![](figs/MSRExportStep1.png){fig-align='centre' width=70%}
+
+2. Choose the settings according to the template below and click `Save`
+
+![](figs/MSRExportStep2.png){fig-align='centre' width=70%}
+
+3. Connect your data logger with the USB cable 
+4. Open the MSR software and double-click `Reader`
+    * The data will be saved onto the computer as an .msr file unique to the software
+
+![](figs/MSRExportStep3.png){fig-align='centre' width=70%}
+
+5. The MSR software should automatically open the .msr file in order to view the data. If nothing happens, double-click `Viewer` and select `File`, `Open`, and select the .msr file
+6. The data should look similar to the graph below, with low tide recorded as 0 and high tide recorded around -1. Any data at the start and end of the deployment which is not part of the desired measurement period can be removed by using the cross arrows button and selecting the period of interest. The graph should always start and end with a period of low tide (i.e. 0 y acceleration)
+
+![](figs/MSRExportStep4.png){fig-align='centre' width=70%}
+
+7. Select `File`, `Export time window as text…`, and select an appropriate folder to save the data as a .csv file
+
+![](figs/MSRExportStep5.png){fig-align='centre' width=70%}
+
+## HOBOware
+
+To export acceleration data from the Pendant G Data Logger:
+
+1. Open the HOBOware software
+2. Open the preferences window by selecting `HOBOware` and `Preferences...`
+
+![](figs/HOBOExportStep1.png){fig-align='centre' width=70%}
+
+3. Select `General`, `Export Settings`, and ensure that `Separate date and time into two columns` is unchecked
+4. Press `OK`
+
+![](figs/HOBOExportStep2.png){fig-align='centre' width=70%}
+
+5. Select `Plot Setup`
+6. Check the `X Accel` box
+
+![](figs/HOBOExportStep3.png){fig-align='centre'}
+
+7. Select `Plot`
+8. Select `Export` 
+9. Save the file as `.csv`
+
+![](figs/HOBOExportStep4.png){fig-align='centre' width=70%}

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>The Mini Buoy Handbook - 6&nbsp; Analysis</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../references.html" rel="next">
+<link href="../chapters/export.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/analysis.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Analysis</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">The Mini Buoy Handbook</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/assembly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Assembly</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/configuration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Configuration</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/deployment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Deployment</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/export.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Export</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/analysis.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#installation" id="toc-installation" class="nav-link active" data-scroll-target="#installation"><span class="header-section-number">6.1</span> Installation</a>
+  <ul class="collapse">
+  <li><a href="#standalone-application" id="toc-standalone-application" class="nav-link" data-scroll-target="#standalone-application"><span class="header-section-number">6.1.1</span> Standalone Application</a></li>
+  <li><a href="#running-within-rstudio" id="toc-running-within-rstudio" class="nav-link" data-scroll-target="#running-within-rstudio"><span class="header-section-number">6.1.2</span> Running within RStudio</a></li>
+  <li><a href="#source-code" id="toc-source-code" class="nav-link" data-scroll-target="#source-code"><span class="header-section-number">6.1.3</span> Source code</a></li>
+  </ul></li>
+  <li><a href="#using-the-app" id="toc-using-the-app" class="nav-link" data-scroll-target="#using-the-app"><span class="header-section-number">6.2</span> Using the App</a>
+  <ul class="collapse">
+  <li><a href="#sec-custon" id="toc-sec-custon" class="nav-link" data-scroll-target="#sec-custon"><span class="header-section-number">6.2.1</span> Settings</a></li>
+  <li><a href="#sec-default" id="toc-sec-default" class="nav-link" data-scroll-target="#sec-default"><span class="header-section-number">6.2.2</span> Upload data</a></li>
+  <li><a href="#filter-data-optional" id="toc-filter-data-optional" class="nav-link" data-scroll-target="#filter-data-optional"><span class="header-section-number">6.2.3</span> Filter data (optional)</a></li>
+  <li><a href="#hydrodynamics" id="toc-hydrodynamics" class="nav-link" data-scroll-target="#hydrodynamics"><span class="header-section-number">6.2.4</span> Hydrodynamics</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Analysis</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>The Mini Buoy App is an open-source tool for reading and interpreting data gathered by any of the three Mini Buoy designs.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/About.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+<section id="installation" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="installation"><span class="header-section-number">6.1</span> Installation</h2>
+<p>The Mini Buoy App is a Shiny application. The App can either be executed as a standalone App (Windows PC only) or directly through RStudio (all systems).</p>
+<section id="standalone-application" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="standalone-application"><span class="header-section-number">6.1.1</span> Standalone Application</h3>
+<ol type="1">
+<li>Download the App <a href="https://cloudstore.zih.tu-dresden.de/index.php/s/7ES7xq2tzMBfNm5" target="_blank">here.</a></li>
+<li>Unzip the folder to a desired location on your system.</li>
+<li>Double-click on the <code>MiniBuoyApp.bat</code> file to launch the App.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The App is currently only compatible with Windows PC. Mac users should run the App directly via RStudio (see below).</p>
+</div>
+</div>
+</section>
+<section id="running-within-rstudio" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="running-within-rstudio"><span class="header-section-number">6.1.2</span> Running within RStudio</h3>
+<ol type="1">
+<li>Install R and RStudio <a href="https://posit.co/download/rstudio-desktop/" target="_blank">here.</a></li>
+<li>Launch the App via GitHub, and install the <code>shiny</code> package if necessary:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(<span class="st">'shiny'</span>)) <span class="fu">install.packages</span>(<span class="st">'shiny'</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">runGitHub</span>(<span class="at">repo =</span> <span class="st">'MiniBuoy-App'</span>, <span class="at">user =</span> <span class="st">'Ale0430'</span>, <span class="at">launch.browser =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="source-code" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="source-code"><span class="header-section-number">6.1.3</span> Source code</h3>
+<p>Users are also able to download the source code of the app from GitHub repository <a href="https://github.com/Ale0430/MiniBuoy-App" target="_blank">here</a>.</p>
+</section>
+</section>
+<section id="using-the-app" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="using-the-app"><span class="header-section-number">6.2</span> Using the App</h2>
+<p>The Mini Buoy App is optimised to contrast hydrodynamic characterstics of intertidal environments at reference (e.g., estabished mangrove edge) and target (e.g., earmarked for mangrove planting) sites. As well as providing a comparison, hydrodynamic conditions of reference and target sites are reported separately. The App will function if only a single Mini Buoy dataset is used, albeit no comparison will be available. Reference and target sites can be used interchangeably.</p>
+<p>This tutorial is based on the default reference and target dataset provided with the App.</p>
+<section id="sec-custon" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="sec-custon"><span class="header-section-number">6.2.1</span> Settings</h3>
+<p>Selecting a location to save outputs is optional. If not set, the App defaults to saving output in the same location that the App is running.</p>
+<ol type="1">
+<li>Select <code>Settings</code> from the left-hand menu.</li>
+<li>Select <code>Browse to select a project folder</code>.</li>
+<li>Navigate to a desired location to save output generated by the App. Root directories can be accessed by selecting the top-right drop-down menu (<img src="figs/NavigatorIcon.png" class="img-fluid" style="width:15.0%">). Use the folder structure in the left-hand window to navigate to the desired location and click <code>Select</code>.</li>
+<li>Click <code>Create project</code>. The working directory will now be displayed in the <code>Project</code> window and at the top-right corner of the window.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Formats for exported data (<code>.csv</code> or <code>.xlsx</code>) and figures (<code>.jpg</code>, <code>.pdf</code>, or <code>.rdata</code>) can be chosen, and figure title, prefix, and theme can be chosen.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/Settings.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</section>
+<section id="sec-default" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="sec-default"><span class="header-section-number">6.2.2</span> Upload data</h3>
+<p>Users have the option of uploading their own data, or using a default dataset supplied with the App. Once either is loaded, a summary table per dataset will be displayed. This table gives the user an initial quality control option to confirm whether the raw data is as expected (e.g., are the columns being identified correctly? is the duration of the survey as expected? is the amount of data as expected according to the sampling rate?).</p>
+<ol type="1">
+<li>Select <code>Data</code> and <code>Upload</code> from the left-hand menu.</li>
+<li>Select the Mini Buoy design being used for Target and Reference sites. Options for uploading data will then appear.</li>
+<li>Select <code>Browse...</code> and navigate to a desired dataset. Alternatively, check the ‘Use default B4+ data’ box(es) to use in the analysis.</li>
+<li>Select <code>Use data</code>. The file name will appear in the top-right corner if uploaded successfully.</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Please ensure the data has been exported from the Mini Buoy in the correct format (see <a href="export.html"><span>Chapter&nbsp;5</span></a>).</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/DataUpload.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</section>
+<section id="filter-data-optional" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="filter-data-optional"><span class="header-section-number">6.2.3</span> Filter data (optional)</h3>
+<p>Users may wish to ‘clean’ the data before analysis to remove any spurious data (e.g., acceleration values for when the Mini Buoy was in transit to/from the deployment site). This can be done by filtering usable data between two datetimes. The raw data can also be plotted to aid in selecting appropriate start/end times.</p>
+<ol type="1">
+<li>Select <code>Data</code> and <code>Filter</code> from the left-hand menu.</li>
+<li>Enter the start and end datetimes and select <code>Apply filter</code> for target and reference datasets as applicable.</li>
+<li>Select <code>Render figure</code> to view raw data. The filtered data will be displayed. See <strong>Troubleshooting</strong> to see how the raw data should look.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/DataFilter.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</section>
+<section id="hydrodynamics" class="level3" data-number="6.2.4">
+<h3 data-number="6.2.4" class="anchored" data-anchor-id="hydrodynamics"><span class="header-section-number">6.2.4</span> Hydrodynamics</h3>
+<p>Inundation, current velocity, and wave orbital velocity (if B4+ Mini Buoy is used) statistics are generated and presented automatically. Users are helped with interpreting the results via a text summary, tabulated data, and figure outputs. Users can interact with the figures and download a comprehensive tabulated data that includes the raw results. By modifying custom settings, users may seek to improve inundation status classification and thereby current/wave metrics should the default parameters be unsatisfactory.</p>
+<ol type="1">
+<li>Select <code>Hydrodynamics</code> and <code>Target</code> or <code>Reference</code> from the left-hand menu, and wait for the App to analyse the data. Analysis is based on the default custom settings shown under the <code>Custom settings</code> drop-down window.</li>
+<li>Inspect the summary text, table, and figures to assess the quality of the analysis, and amend the <code>Custom settings</code> if necessary (see <a href="#sec-custom"><span>Section&nbsp;6.2.4.1</span></a>).</li>
+<li>Select <code>Download results</code> and <code>Download plots</code> to save copies of the data and figures respectively. Further explanation of each below.</li>
+<li>For a comparison between <code>Target</code> and <code>Reference</code> sites, select <code>Comparison</code> from the left-hand menu. Analysis is based on the default custom settings as specified under the <code>Custom settings</code> drop-down window for both <code>Target</code> and <code>Reference</code> menus.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Given that only the B4+ Mini Buoy measures wave orbital velocity, no statistics for wave orbital velocity will be generated when other Mini Buoy designs are used.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/HydroSingle.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+<section id="sec-custom" class="level4" data-number="6.2.4.1">
+<h4 data-number="6.2.4.1" class="anchored" data-anchor-id="sec-custom"><span class="header-section-number">6.2.4.1</span> Custom settings</h4>
+<p>Custom settings determine how the App cleans inundation classifications to achieve optimal results. Whilst the default settings are sufficient in most cases, some sites may experience unique tidal characteristics that require a tuning of the <code>Custom settings</code>. Having a reliable classification of inundation is necessary for the next step of calculating current and wave orbital velocities reliably. See <strong>TROUBLESHOOTING TBC</strong> for examples of what to look out for in the raw data that indicates the default settings may need changing. There are four parameters that users can tune:</p>
+<ul>
+<li><strong>Minimum gap.</strong> Occasionally, the App will misclassify clusters of points during an inundation event as “non inundated”. This tends to happen during periods when there’s a strong, consistent current (a signal that can be indistinguishable from a Mini Buoy lying at rest). Slight wobbling in the Mini Buoy does allow the App to classify the majority of the inundation event correctly. For the cluster of points are are wrongly classified as “non-inundated”, the App will reclassify these according to the <code>Minimum gap</code> argument, that says “any cluster shorter than this time window will be classified as fully inundated”. It is important that the <code>Minimum gap</code> argument is less than the time between inundation events - otherwise, the gap between two tides will be classed as “fully inundated”!</li>
+<li><strong>Search window.</strong> The start and end of each inundation event is initially classified as “fully inundated” by the App. Since a partially inundated Mini Buoy will give the same signal as one that’s fully submerged and being pushed by a strong current, it is important to distinguish between these. The App identifies partially inundated cases during flood tide by looking for the abrupt shift in a Mini Buoy moving from a horizontal position (~0°) to a near vertical one (near 90°) before any current may start pushing against it (moving towards 0° again). The reverse pattern applies for ebb tides. This is done by identifying the first and last timestamp of a given inundation event, and then searching for abrupt shifts before and after these points over a specified time window. The time window is defined by the <code>Search window</code> argument, which is a proportion of each inundation event. For example, a value of 25% means that the search window is quarter the length of a given inundation event. The middle of the search window is placed at the start and end of the event, so that 12.5% of the search window before and after are used in searching for abrupt shifts around the start and end of inundation events. The maximum amount of data that can be used is 50% (i.e., the full flood and ebb tide lengths). A longer search window will result in a more conservative classification, so that fully inundated cases may be classified as partially inundated. Shorter inundation windows may help capture peak flood/ebb tides, though also increases the probability of missing truly partially inundated cases.</li>
+<li><strong>Minimum duration.</strong> Some flooding events, especially nearer neap tides, may result in only very short periods of inundation. Taking current and wave orbital velocities from these events may be unwise, especially if the Mini Buoy is only just fully submerged. <code>Minimum duration</code> sets the minimum duration of inundation that an event needs to be in order to be used in the analysis. Anything below this threshold is classified as partially inundated.</li>
+<li><strong>Minimum tilt.</strong> Some flooding events may be too shallow to raise the Mini Buoy to a fully upright position (90°) as would be expected during slack water. In such cases, current and wave orbital velocity values may be spurious. <code>Minimum tilt</code> specifies the minimum tilt that needs to be crossed per inundation event, otherwise the entire event is classified as partially inundated. Note, if a site is exposed to currents throughout the survey, the Mini Buoy may never reach 90°. This is why specifying a custom <code>Minimum tilt</code> appropriate to the study area in question may help improve results.</li>
+</ul>
+<p>Examples are given in the <strong>TROUBLESHOOT TBC</strong> chapter to help users identify where issues may be occurring and how to remedy them. It can be good practice to modify the <code>Custom settings</code> and see what effect that has on the results - which may be negligible.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/CustomSettings.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</section>
+<section id="summary" class="level4" data-number="6.2.4.2">
+<h4 data-number="6.2.4.2" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.2.4.2</span> Summary</h4>
+<p>The summary text provides a simple language overview of key results, to ascertain whether the site is generally suitable for the natural or managed establishment of coastal vegetation. Indications of whether the site is suitable for restoration are given, depending on the length of the survey, the type and symmetry of the tidal regime, duration of the longest inundation-free period (i.e., Window of Opportunity for seedling establishment), inundation frequency, exposure to current velocity, and exposure to wave orbital velocity (if the B4+ design is used). For example, a site may have low current and wave exposure (that suit restoration) but excessive inundation duration (that hamper restoration).</p>
+</section>
+<section id="figures" class="level4" data-number="6.2.4.3">
+<h4 data-number="6.2.4.3" class="anchored" data-anchor-id="figures"><span class="header-section-number">6.2.4.3</span> Figures</h4>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Raw data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Daily inundation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Current velocity</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Wave orbital velocity</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Ebb-flood comparison</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/RawData.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Tilt of the Mini Buoy over time, colour-coded to show the inundation status (non/partial/full) as classified by the App. This plot is a useful check to confirm whether the classification was successful (see <a href="#sec-custom"><span>Section&nbsp;6.2.4.1</span></a>)</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/InundationData.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Daily inundation duration per day. Spring/neap tidal cycles and periods of emersion (no inundation) can be easily detected.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/CurrentsData.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Current velocities per day. The point represents median values per day, and the size of the points is scaled to the number of inundation events per day (the larger the point, the more inundation events there were). The top error bar represents the largest velocities (expressed as the upper 95th percentile of velocities) whilst the bottom error bar represents the smallest velocities detected per day.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/WaveData.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Wave orbital velocities per day. The point represents median values per day, and the size of the points is scaled to the number of inundation events per day (the larger the point, the more inundation events there were). The top error bar represents the largest velocities (expressed as the upper 95th percentile of velocities) whilst the bottom error bar represents the smallest velocities detected per day.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/EbbFloodData.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Timing of current velocities for the ebb (expressed with negative values) and flood (expressed with positive values) to/from high tide (slack water) for the longest inundation event detected by the App. This is a useful way to determine whether the may be any asymmetry in the tide (e.g., flood dominance where the duration of inundation on the flood tide is shorter and has larger currents), which has implications for the direction of net sediment transport.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/export.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Export</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
