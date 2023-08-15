@@ -1,3 +1,3 @@
-# MiniBuoyHandbook
+# Mini Buoy Handbook
 
-another app!
+A handbook for using the Mini Buoy App available at https://cailadd90.github.io/MiniBuoyHandbook/.
