@@ -6,26 +6,27 @@ After a deployment, the data can be retrieved from the logger and exported as a 
 
 To export acceleration data from the MSR145 B4 logger:
 
-1. Open the MSR software and double-click `Csv`
+1. Open the MSR software
+2. Double-click `Csv`
 
 ![](figs/MSRExportStep1.png){fig-align='centre' width=70%}
 
-2. Choose the settings according to the template below and click `Save`
+3. Choose the settings according to the template below and click `Save` and `Exit`. This step only needs to be done once if exporting data from several loggers in a session
 
 ![](figs/MSRExportStep2.png){fig-align='centre' width=70%}
 
-3. Connect your data logger with the USB cable 
-4. Open the MSR software and double-click `Reader`
+4. Connect your data logger with the USB cable 
+5. Open the MSR software and double-click `Reader`. Click `OK` to select a specific data file if prompted
     * The data will be saved onto the computer as an .msr file unique to the software
 
 ![](figs/MSRExportStep3.png){fig-align='centre' width=70%}
 
-5. The MSR software should automatically open the .msr file in order to view the data. If nothing happens, double-click `Viewer` and select `File`, `Open`, and select the .msr file
-6. The data should look similar to the graph below, with low tide recorded as 0 and high tide recorded around -1. Any data at the start and end of the deployment which is not part of the desired measurement period can be removed by using the cross arrows button and selecting the period of interest. The graph should always start and end with a period of low tide (i.e. 0 y acceleration)
+6. The MSR software should automatically open the .msr file in order to view the data. If nothing happens, double-click `Viewer` and select `File`, `Open`, and select the .msr file
+7. The data should look similar to the graph below, with low tide recorded as 0 and high tide recorded around -1. Any data at the start and end of the deployment which is not part of the desired measurement period can be removed by using the cross arrows button and selecting the period of interest. The graph should always start and end with a period of low tide (i.e. 0 y acceleration)
 
 ![](figs/MSRExportStep4.png){fig-align='centre' width=70%}
 
-7. Select `File`, `Export time window as text…`, and select an appropriate folder to save the data as a .csv file
+8. Select `File`, `Export time window as text…`, and select an appropriate folder to save the data as a .csv file
 
 ![](figs/MSRExportStep5.png){fig-align='centre' width=70%}
 

@@ -25,20 +25,20 @@ The MSR145W B4 comes with a USB charging cable. Free software to configure the l
 
 ![](figs/MSRStep3.png){fig-align='centre' width=70%}
 
-11. Check the `limits` box
+11. Under `Record control`, check the `Limits active` box
 12. Select the `Limits` tab. We can use limits to effectively disable the X and Y sensors by setting unrealistically high acceleration limits. This will allow your logger to store more Y acceleration data.
-13. For ACC x and ACC z channels, select `<L1 or >L2, (Shock)` from the record limit drop-down menu
-14. Set the corresponding `Limit L1` to -999 and `Limit L2` to +999. The MSR software will default to the maximum possible range
-15. Make sure there are no limits set on the ACC y channel by selecting `inactive` from the record limit drop-down menu
-16. Click the `<` button
+13. For the **ACC x** channel, select `<L1 or >L2, (Shock)` from the record limit drop-down menu (click on the cell to make the drop-down menu visible)
+14. For the **ACC z** channel, select `<L1 or >L2, (Shock)` from the record limit drop-down menu (click on the cell to make the drop-down menu visible) 
+15. Set the corresponding `Limit L1` to -999 and `Limit L2` to +999. The MSR software will default to the maximum possible range
+16. Make sure there are no limits set on the ACC y channel by selecting `inactive` from the record limit drop-down menu
+17. Click the `<` button in the bottom-left of the window
 
 ![](figs/MSRStep4.png){fig-align='centre' width=70%}
 
-17. Select the `Basic settings` tab
-18. Under `Sensors`, select `t1` from the `ACC x, y, z` drop-down menu
-19. Under `Main storage rate`, set `t1=` to the desired sampling rate in seconds
-    * The Mini Buoy has been calibrated to accept sampling rates between 1 and 10 seconds. Refer to @tbl-1 for sampling duration (this is more accurate than the `Prediction` tool that underestimates memory capacity as it does not take into account the limit settings).
-20. Under `Record control`, check the `Limits active` box
+18. Select the `Basic settings` tab
+19. Under `Sensors`, select `t1` from the `ACC x, y, z` drop-down menu
+20. Under `Main storage rate`, set `t1=` to the desired sampling rate in seconds
+    * The Mini Buoy has been calibrated to accept sampling rates between 1 and 10 seconds. Refer to the table in @sec-intro for sampling duration (this is more accurate than the `Prediction` tool that underestimates memory capacity as it does not take into account the limit settings).
 21. Check the `Start at` box, and set the date and time shortly after your planned deployment
 22. Under `Options during record`, uncheck all options. This will extend the battery life of the logger
 23. Click `Write basic settings` to upload your settings to the logger
@@ -56,7 +56,7 @@ The Pendant G Data Logger comes with the free [HOBOware](https://www.onsetcomp.c
 4. You can set a name for the logger under `Name`
 5. In the `Sensors` tab and in the `Configure Sensors to Log` section, check the `X-Axis Acceleration (+/- 3g)` box
 6. From the `Deployments` tab, set the `Logging Interval` to the desired sampling length using the drop-down menu.
-    * The Mini Buoy has been calibrated to accept sampling rates between 1 and 10 minutes. Refer to @tbl-1 for sampling duration.
+    * The Mini Buoy has been calibrated to accept sampling rates between 1 and 10 minutes. Refer to the table in @sec-intro for sampling duration.
 7. In the `Deployments` tab, set the `Start Logging` date and time for shortly after your planned deployment  
 8. Click `Delayed Start` and disconnect the Pendant logger from the computer.
 
