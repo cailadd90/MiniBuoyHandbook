@@ -42,7 +42,8 @@ The MSR145W B4 comes with a USB charging cable. Free software to configure the l
 21. Check the `Start at` box, and set the date and time shortly after your planned deployment
 22. Under `Options during record`, uncheck all options. This will extend the battery life of the logger
 23. Click `Write basic settings` to upload your settings to the logger
-24. Click `Exit` and disconnect the MSR145W B4 logger from the computer. A blue light will begin to flash, confirming the logger is primed and ready to begin logging when the start date and time is reached
+24. Click `Exit` and disconnect the MSR145W B4 logger from the computer
+25. A blue light will begin to flash, confirming the logger is primed and ready to begin logging when the start date and time is reached
 
 ![](figs/MSRStep5.png){fig-align='centre' width=70%}
 
