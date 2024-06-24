@@ -41,6 +41,6 @@ Partially inundated cases are then identified using an abrupt shift detection al
 
 To calibrate acceleration and velocity, Mini Buoys were deployed adjacent to state-of-the-art sensors that measure water velocity directly. Current velocities as low as 0.01 m/s and as high as 0.75 m/s can be detected with good accuracy (Figures A-C below). The B4+ is reasonable at measuring wave orbital velocities up to 0.3 m/s (Figure D below).
 
-![](figs/Calibrations.png){fig-align='centre' width=70%}
+![](figs/Calibration.png){fig-align='centre' width=70%}
 
 [^1]: A comprehensive description of the Mini Buoy calibrations is given in Ladd et al. (2023).
