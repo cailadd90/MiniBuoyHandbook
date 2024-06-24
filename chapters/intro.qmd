@@ -31,15 +31,15 @@ Inundation duration, current velocity, and wave orbital velocity parameters can 
 
 ![](figs/MiniBuoyMotion.png){fig-align='centre'}
 
-Testing has shown that inundation status is correctly identified at rates of 87-99% across all designs. To identify the inundation status of a Mini Buoy from acceleration data, a classifier algorithm (Quadratic Discriminant Analysis) differentiates inundated and non-inundated cases from the median and interquartile range in acceleration per minute; median and interquartile range values are near zero for a Mini Buoy at rest, and are larger when a Mini Buoy is inundated.
+Testing has shown that inundation status is correctly identified at rates of 87-99% across all designs. To identify the inundation status of a Mini Buoy from acceleration data, an algorithm classifies inundated and non-inundated cases using the median and interquartile range in acceleration per minute. Median and interquartile range values are near zero for a Mini Buoy at rest, and are larger when a Mini Buoy is inundated.
 
 ![](figs/PartitionPlot.png){fig-align='centre' width=70%}
 
-Partially inundated cases are then identified using an abrupt shift detection algorithm (Boulton, 2022) that searches for the continuous change in Mini Buoy tilt from 0 to ~90° at the start of the flood tide and ~90 to 0° at the end of the ebb tide, characteristic of partially inundated cases before/after peak flood/ebb currents.
+Partially inundated cases are then identified using an abrupt shift detection algorithm (Boulton, 2022) that searches for the continuous change in Mini Buoy tilt from 0 to ~90° at the start of the flood tide and ~90 to 0° at the end of the ebb tide, characteristic of partially inundated cases.
 
 ![](figs/InundationEvent.png){fig-align='centre' width=70%}
 
-Conversion from tilt to velocity has been done by deploying each Mini Buoy design adjacent to hydrographic sensors that measure water velocity directly. Current velocities as low as 0.01 m/s and as high as 0.75 m/s can be detected with good accuracy (Figures A-C below). The B4+ is reasonable at measuring wave orbital velocities between 0 and 0.2 m/s (Figure D below).
+To calibrate acceleration and velocity, Mini Buoys were deployed adjacent to state-of-the-art sensors that measure water velocity directly. Current velocities as low as 0.01 m/s and as high as 0.75 m/s can be detected with good accuracy (Figures A-C below). The B4+ is reasonable at measuring wave orbital velocities up to 0.3 m/s (Figure D below).
 
 ![](figs/Calibrations.png){fig-align='centre' width=70%}
 
