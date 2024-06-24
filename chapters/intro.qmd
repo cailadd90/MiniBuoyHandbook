@@ -12,7 +12,7 @@ Once assembled, Mini Buoys can be used in single, comparative, or multiple deplo
 
 |                          | B4               | B4+              | Pendant           |
 |:-------------------------|:----------------:|:----------------:|:-----------------:|
-| Cost                     | £430             | £430             | £120              |
+| Cost                     | £300             | £300             | £160              |
 | Total weight             | 42.3 g           | 60.0 g           | 19.9 g            |
 | Sensing height above bed | 16 cm            | 16 cm            | 10.5 cm           |
 | Deployment duration      | 1 sec: 25 days   | 1 sec: 25 days   | 10 sec: 7.5 days  |
