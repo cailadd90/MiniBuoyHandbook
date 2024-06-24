@@ -15,14 +15,17 @@ Once assembled, Mini Buoys can be used in single, comparative, or multiple deplo
 | Cost                     | £430             | £430             | £120              |
 | Total weight             | 42.3 g           | 60.0 g           | 19.9 g            |
 | Sensing height above bed | 16 cm            | 16 cm            | 10.5 cm           |
-| Deployment duration      | 1 sec: 25 days   | 1 sec: 25 days   | 2 min: **XXX** days   |
-| Deployment duration      | 5 sec: 125 days  | 5 sec: 125 days  | 6 min: **XXX** days   |
-| Deployment duration      | 10 sec: 170 days | 10 sec: 170 days | 10 min: **XXX** days  |
+| Deployment duration      | 1 sec: 25 days   | 1 sec: 25 days   | 10 sec: 7.5 days  |
+| Deployment duration      | 5 sec: 125 days  | 5 sec: 125 days  | 1 min: 45 days    |
+| Deployment duration      | 10 sec: 170 days | 10 sec: 170 days | 5 min: 225 days   |
+| Deployment duration      | 1 min: 1.4 years | 1 min: 1.4 years*| 10 min: 1.2 years |
 | Currents detection limit | 4.3 cm/s         | 1.8 cm/s         | 4.9 cm/s          |
 | Currents accuracy        | ±18.9 cm/s       | ±13.8 cm/s       | ±2.20 cm/s        |
 | Waves detection range    | -                | 0.0 cm/s         | -                 |
 | Waves accuracy           | -                | ±17.8 cm/s       | -                 |
 | Configuration            | Windows          | Windows          | Windows and macOS |
+ **`*`**  will not measure wave orbital velocity in a reliable way
+
 
 ## Operating principles
 

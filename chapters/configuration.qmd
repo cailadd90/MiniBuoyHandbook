@@ -54,10 +54,11 @@ The Pendant G Data Logger comes with the free [HOBOware](https://www.onsetcomp.c
 1. Download and install the free [HOBOware](https://www.onsetcomp.com/hoboware-free-download/){target='_blank'} software
 2. Connect a logger to a computer via the HOBO Optic USB Base Station
 3. Open the HOBOware software
-4. You can set a name for the logger under `Name`
+4. Click the `Select Device` drop-down menu ![](figs/SelectDeviceButton.png){width=5%} , and tick the USB or serial port tabs in congruence with how you connected the data logger to the computer
+5. Select the `Launch` icon ![](figs/LaunchDeviceBUtton.png){width=4%} , a window will pop open where you can set a name for the logger under the `Name` field.
 5. In the `Sensors` tab and in the `Configure Sensors to Log` section, check the `X-Axis Acceleration (+/- 3g)` box
-6. From the `Deployments` tab, set the `Logging Interval` to the desired sampling length using the drop-down menu.
-    * The Mini Buoy has been calibrated to accept sampling rates between 1 and 10 minutes. Refer to the table in @sec-intro for sampling duration.
+6. From the `Deployments` tab, set the `Logging Interval` to the desired sampling rate using the drop-down menu. Increasing the sampling rate will increase the logging duration (calculated based on the logging rate and battery status of the device).
+    * The Mini Buoy has been calibrated to sampling rates of 1 minute, thus, this is the recommended sampling rate setting, rendering 45 logging days at full battery (refer to the table in @sec-intro for other sampling rates that can be used with Hobo pendant G loggers).
 7. In the `Deployments` tab, set the `Start Logging` date and time for shortly after your planned deployment  
 8. Click `Delayed Start` and disconnect the Pendant logger from the computer.
 
