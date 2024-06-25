@@ -1,4 +1,4 @@
-# Configuration
+# Configuration {#sec-config}
 
 Prior to each deployment of the Mini Buoy, the data logger will need to be fully charged, have a full memory, and be correctly configured according to the user's requirements. The following section describes how to configure the MSR145W B4 (used in both the B4 and B4+ Mini Buoy designs) and HOBO Pendant G acceleration data loggers.
 

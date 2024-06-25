@@ -2,6 +2,7 @@
 
 Depending on their requirements, the user has a choice of three Mini Buoy designs for measuring hydrodynamics (see @sec-intro). In the following steps, we provide instructions for the assembly of each design.
 
+::: panel-tabset
 ## B4
 
 The B4 is a transparent and self-standing centrifuge tube with an MSR145W B4[^1] acceleration logger sealed inside and supported by floral foam. The tube is tethered to an anchor using fishing swivels attached through two holes in the centrifuge tube skirt. To build a B4, first gather the following equipment:
@@ -11,7 +12,7 @@ The B4 is a transparent and self-standing centrifuge tube with an MSR145W B4[^1]
 *	Floral foam
 *	[MSR145W B4](https://www.msr.ch/en/product/msr145/){target='_blank'} acceleration data logger
 *	Silicone sealant
-*	Drill with a 4 mm dowel bit
+*	Drill with a 3.5 mm dowel bit
 *	3 × 5 cm (1.1 g) fishing swivels
 
 To assemble the B4 Mini Buoy:
@@ -33,13 +34,11 @@ The B4+ almost identical in design to the B4, with some modifications: the centr
 
 * 50 mL UV-blocking centrifuge tube
 * Sand paper
-* Drill with a 4 mm dowel bit
+* Drill with a 3.5 mm dowel bit
 * M4 Eye bolt and nut
-* M4 rubber washer
-* M4 long socket
+* Flathead screwdriver
 * Epoxy glue
-* M32 O-rings
-* 20 g lead shot weight
+* 20 g steel shot weight
 * Floral foam
 * Waterproof label 
 * 250 lb / 113 kg nylon coated 1×7 steel strand fishing line
@@ -51,33 +50,43 @@ The B4+ almost identical in design to the B4, with some modifications: the centr
 To assemble the B4+ Mini Buoy:
 
 1. Abrade the bottom of the centrifuge tube (this removes any lubricant on the tube and creates a better surface for the epoxy glue to bond with)
-2. Drill a 4 mm hole in the bottom of the centrifuge tube
-3. Thread the eye bolt through the hole 
-4. Place the rubber washer over the eye bolt thread from inside the tube
-5. Dab some epoxy glue around the eye bolt (inside and out) to seal the hole
-6. Secure the nut in place using the long socket
+2. Drill a 3.5 mm hole in the bottom of the centrifuge tube using the dowel bit on a high-speed setting
+3. Remove any plastic debris that may be blocking the hole on the inside of the centrifuge tube using the flathead screwdriver
+4. Select an eye bolt and nut. Check whether the eye bolt easily threads onto the bolt. If not, discard the bolt
+5. Drop the nut into the centrifuge tube and gently shake the tube until the nut is oriented above the hole
+6. Using the flathead screwdriver to hold the bolt in place, thread the eye bolt through the hole and screw it into the nut until finger tight (overtightening may damage the centrifuge tube)
+
+::: {.callout-note}
+As the nut threads around the bolt, it should eventually become lodged between the sides of the centrifuge tube allowing for a finger tight fit. If the eye bolt continues to twist, unthread the eye bolt, discard it, and try again with a different eye bolt (sometimes the threading is too short and the nut cannot hold fast between the thread and centrifuge tube).
+:::
+
+7. Mix the epoxy glue according to manufacturer instructions
+8. Dab some expoxy glue around the eye bolt, ensuring there’s enough glue to cover any gaps that might allow water into the tube
 
 ![](figs/B4pEyeHook.jpg){fig-align='centre' width=70%}
 
-7. To ensure watertightness, install a rubber o-ring around the inside lip of the lid using tweezers as shown:
+9. Allow the epoxy glue to cure according to manufacturer specifications
+10. Pour 20 g of steel shot into the tube. 
 
-![](figs/B4pLidSeal.jpg){fig-align='centre' width=70%}
+::: {.callout-note}
+Adding shot reduces the buoyancy of the Mini Buoy, making it less stable in the water column. This has been shown to improve the accelerometer sensitivity to detecting currents and waves.
+:::
 
-8. Pour 20 g of steel shot into the tube. The shot reduces the buoyancy of the Mini Buoy, making it less stable in the water column. This has been shown to improve the accelerometer sensitivity
-9. Cut a 3 cm length cylinder from the floral foam that will fit comfortably into the tube
-10. Insert the floral foam cylinder into the tube. This holds the steel shot in place and ensures the logger is positioned at the top of the tube  
-11. Attach a waterproof label onto the centrifuge tube indicating the owner, a "do not remove" notice, and contact details 
-12. Thread the fishing line through a crimp sleeve and loop the fishing line back on itself to form a ring of ~2 cm diameter
-13. Crimp the sleeve so it fits tightly around the fishing line 
-14. Thread another fishing line through a new crimp sleeve, then through the eye bolt and first fishing line ring
-15. Adjust the diameter of the ring so the total chain length is 4 cm, then crimp (the B4+ has been calibrated to measure hydrodynamics 4 cm above the tidal flat). The tether should look as follows:
+11. Cut a 3 cm long cylinder from the floral foam that will fit comfortably into the tube
+12. Insert the floral foam cylinder into the tube. This holds the steel shot in place and ensures the logger is positioned at the top of the tube  
+13. Attach a waterproof label onto the centrifuge tube indicating the owner, a "do not remove" notice, and contact details 
+14. Thread the fishing line through a crimp sleeve and loop the fishing line back on itself to form a ring of ~2 cm diameter
+15. Crimp the sleeve so it fits tightly around the fishing line 
+16. Thread another fishing line through a new crimp sleeve, then through the eye bolt and first fishing line ring
+17. Adjust the diameter of the ring so the total chain length is 4 cm, then crimp
 
 ![](figs/B4pFishingLineChain.jpg){fig-align='centre' width=70%}
 
-16. Roughly cut a 5 cm cylinder of floral foam with matching diameter of the centrifuge tube and cut down the middle
-17. Place both halves around the configured MSR145W B4 acceleration data logger, then gently push the logger into the centrifuge tube with the PC connector facing upright. The floral foam will prevent the logger from moving inside the tube
-18.	Apply silicone sealant around the screw thread of the centrifuge tube and fasten the tube cap
-19.	Apply more sealant along the rim of the centrifuge cap
+18. Roughly cut a 5 cm long cylinder from the floral foam that matches the diameter of the centrifuge tube
+Cut the floral foam cylinder down the middle
+19. Place both halves around a configured MSR145W B4 logger (see @sec-config), then gently push the logger into the centrifuge tube **with the PC connector facing upright** to secure the logger in the tube
+20.	Apply silicone sealant around the screw thread of the centrifuge tube and fasten the tube cap
+21.	Close the lid of the centrifuge tube, and wipe away any excess silicone to give a clean finish
 
 ## Pendant
 
@@ -90,6 +99,8 @@ The Pendant[^2] can be directly tethered to a pole in the ground using fishing s
 To assemble the Pendant Mini Buoy, simply attach the fishing swivel to the anchor point on the Pendant logger as shown:
 
 ![](figs/PendantTether.jpg){fig-align='centre' width=70%}
+
+:::
 
 [^1]: The MSR145W B4 is a standalone accelerometer with integrated rechargeable lithium ion battery and memory in a waterproof seal. Acceleration is measured along the y-axis.
 
