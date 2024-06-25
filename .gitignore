@@ -5,4 +5,28 @@
 
 /.quarto/
 
-.DS_Store   # mac-system file
+# Mac system files:
+.DS_Store  
+
+# HTML files:
+docs/index.html
+docs/chapters/index.html
+docs/chapters/intro.html
+docs/chapters/assembly.html
+docs/chapters/configuration.html
+docs/chapters/deployment.html
+docs/chapters/export.html
+
+# System files:
+docs/search.json
+docs/chapters/analysis_files/
+docs/site_libs/bootstrap/bootstrap-icons.css
+docs/site_libs/bootstrap/bootstrap-icons.woff
+docs/site_libs/bootstrap/bootstrap.min.css
+docs/site_libs/bootstrap/bootstrap.min.js
+docs/site_libs/quarto-html/anchor.min.js
+docs/site_libs/quarto-html/popper.min.js
+docs/site_libs/quarto-html/quarto.js
+docs/site_libs/quarto-nav/quarto-nav.js
+docs/site_libs/quarto-search/autocomplet.ums.js
+docs/site_libs/quarto-search/quarto-search/js
