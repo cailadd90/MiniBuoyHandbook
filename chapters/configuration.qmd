@@ -1,7 +1,8 @@
 # Configuration {#sec-config}
 
-Prior to each deployment of the Mini Buoy, the data logger will need to be fully charged, have a full memory, and be correctly configured according to the user's requirements. The following section describes how to configure the MSR145W B4 (used in both the B4 and B4+ Mini Buoy designs) and HOBO Pendant G acceleration data loggers.
+Prior to each deployment of the Mini Buoy, the data logger will need to be fully charged, have a full memory, and be correctly configured according to the user's requirements. The following section describes how to configure the MSR145W B4 (used in both the B4 and B4+ Mini Buoy designs) and HOBO Pendant G acceleration data loggers. Select the correct software tab according to the logger type being configured:
 
+::: panel-tabset
 ## MSR145
 
 The MSR145W B4 comes with a USB charging cable. Free software to configure the logger can be downloaded [here](https://www.msr.ch/en/support/msr-pc-software-standard/){target='_blank'}. At present, the logger is only compatible with a Windows PC. To configure the MSR145W B4:
@@ -9,44 +10,81 @@ The MSR145W B4 comes with a USB charging cable. Free software to configure the l
 1. Download and install the [MSR software](https://www.msr.ch/en/support/pcsoftware/){target='_blank'} 
 2. Connect a logger to a Windows PC. A yellow LED will light up on the logger, indicating the internal battery is being charged. The light will extinguish once the battery is fully charged
 3. Open the MSR software
-4. Double-click `Setup`
+
+::: {.callout-important}
+If an error message appears saying "No hardware found!", quit the program and reopen MSR.
+:::
+
+The MSR software differs depending on which model of MSR145W B4 was purchased. Whilst using different models does not affect the performance of a Mini Buoy, the setup procedure does differs. To confirm the model of the logger:
+
+**Find a good solution for this. 'Info' tab?**
+
+Once the logger model has been identified, select the correct tab and proceed with the setup. 
+
+::: panel-tabset
+### MSR145 C
+
+1. Double-click `Setup`
 
 ![](figs/MSRStep1.png){fig-align='centre' width=70%}
 
-5. Select the `Format memory` tab
-6. Click `Format`. This will delete any data stored on the logger
+2. Select the `Format memory` tab
+3. Click `Format`. This will delete any data stored on the logger
+
+![](figs/MSRcFormat.png){fig-align='centre' width=70%}
+
+4. Once formatting is complete, select the `Limit` tab
+5.	Select Ax and press CHANGE. Then under the drop down tab for ‘Record condition’ select NEVER then press OK. Complete the same process for Az. Leave Ay at ‘always’ as we will only be taking acceleration measurements on the y axis to conserve logger memory and battery usage.
+7.	Select the USER SETTINGS tab. 
+8.	Rename the logger a suitable name. For example, data logger 1 for Rockcliffe would be RC-01. Make sure to record this with the serial number of the logger so that it can be tracked. 
+9.	Select the BASIC SETTINGS tab.
+10.	Under the ‘Task A’ section of ‘Sensors’ make sure it is set to 1s. 
+11.	Set the logger to start at a suitable time, a good way to estimate is to check the tide times and calculate it to start 2 hours before high tide. 
+12.	Tick ‘Consider limit’
+13.	Untick any ‘Options during record’0.
+14.	Press start. The ‘Status’ record on the left should now read "Record starts on 20XX-XX-XX HH:MM". If the Status record still says "inactive", it will not record once the set start time is reached.
+
+### MSR145 B
+
+1. Double-click `Setup`
+
+![](figs/MSRStep1.png){fig-align='centre' width=70%}
+
+2. Select the `Format memory` tab
+3. Click `Format`. This will delete any data stored on the logger
 
 ![](figs/MSRStep2.png){fig-align='centre' width=70%}
 
-7. Once formatting is complete, select the `User settings` tab
-8. Set the acceleration sensor measure range to `2G`
-9. You can define a name for the logger under `Name of logger`
-10. Click `Write user settings`
+4. Once formatting is complete, select the `User settings` tab
+5. Set the acceleration sensor measure range to `2G`
+6. You can define a name for the logger under `Name of logger`
+7. Click `Write user settings`
 
 ![](figs/MSRStep3.png){fig-align='centre' width=70%}
 
-11. Under `Record control`, check the `Limits active` box
-12. Select the `Limits` tab. We can use limits to effectively disable the X and Y sensors by setting unrealistically high acceleration limits. This will allow your logger to store more Y acceleration data.
-13. For the **ACC x** channel, select `<L1 or >L2, (Shock)` from the record limit drop-down menu (click on the cell to make the drop-down menu visible)
-14. For the **ACC z** channel, select `<L1 or >L2, (Shock)` from the record limit drop-down menu (click on the cell to make the drop-down menu visible) 
-15. Set the corresponding `Limit L1` to -999 and `Limit L2` to +999. The MSR software will default to the maximum possible range
-16. Make sure there are no limits set on the ACC y channel by selecting `inactive` from the record limit drop-down menu
-17. Click the `<` button in the bottom-left of the window
+8. Under `Record control`, check the `Limits active` box
+9. Select the `Limits` tab. We can use limits to effectively disable the X and Y sensors by setting unrealistically high acceleration limits. This will allow your logger to store more Y acceleration data.
+10. For the **ACC x** channel, select `<L1 or >L2, (Shock)` from the record limit drop-down menu (click on the cell to make the drop-down menu visible)
+11. For the **ACC z** channel, select `<L1 or >L2, (Shock)` from the record limit drop-down menu (click on the cell to make the drop-down menu visible) 
+12. Set the corresponding `Limit L1` to -999 and `Limit L2` to +999. The MSR software will default to the maximum possible range
+13. Make sure there are no limits set on the ACC y channel by selecting `inactive` from the record limit drop-down menu
+14. Click the `<` button in the bottom-left of the window
 
 ![](figs/MSRStep4.png){fig-align='centre' width=70%}
 
-18. Select the `Basic settings` tab
-19. Under `Sensors`, select `t1` from the `ACC x, y, z` drop-down menu
-20. Under `Main storage rate`, set `t1=` to the desired sampling rate in seconds
+15. Select the `Basic settings` tab
+16. Under `Sensors`, select `t1` from the `ACC x, y, z` drop-down menu
+17. Under `Main storage rate`, set `t1=` to the desired sampling rate in seconds
     * The Mini Buoy has been calibrated to accept sampling rates between 1 and 10 seconds. Refer to the table in @sec-intro for sampling duration (this is more accurate than the `Prediction` tool that underestimates memory capacity as it does not take into account the limit settings).
-21. Check the `Start at` box, and set the date and time shortly after your planned deployment
-22. Under `Options during record`, uncheck all options. This will extend the battery life of the logger
-23. Click `Write basic settings` to upload your settings to the logger
-24. Click `Exit` and disconnect the MSR145W B4 logger from the computer
-25. A blue light will begin to flash, confirming the logger is primed and ready to begin logging when the start date and time is reached
+18. Check the `Start at` box, and set the date and time shortly after your planned deployment
+19. Under `Options during record`, uncheck all options. This will extend the battery life of the logger
+20. Click `Write basic settings` to upload your settings to the logger
+21. Click `Exit` and disconnect the MSR145W B4 logger from the computer
+22. A blue light will begin to flash, confirming the logger is primed and ready to begin logging when the start date and time is reached
 
 ![](figs/MSRStep5.png){fig-align='centre' width=70%}
 
+:::
 ## HOBOware
 
 The Pendant G Data Logger comes with the free [HOBOware](https://www.onsetcomp.com/hoboware-free-download/){target='_blank'} software to configure the logger. HOBOware is compatible with Windows and macOS operating systems. To configure the HOBO Pendant:
@@ -64,4 +102,4 @@ The Pendant G Data Logger comes with the free [HOBOware](https://www.onsetcomp.c
 
 ![](figs/HOBOStep1.png){fig-align='centre' width=70%}
 
-
+:::
