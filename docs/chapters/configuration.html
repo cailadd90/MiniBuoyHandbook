@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,8 +62,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -68,11 +76,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Configuration</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/configuration.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Configuration</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -80,79 +93,81 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">The Mini Buoy Handbook</a> 
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="../chapters/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/assembly.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Assembly</span></a>
+  <a href="../chapters/assembly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Assembly</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/configuration.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Configuration</span></a>
+  <a href="../chapters/configuration.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Configuration</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/deployment.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Deployment</span></a>
+  <a href="../chapters/deployment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Deployment</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/export.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Export</span></a>
+  <a href="../chapters/export.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Export</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Analysis</span></a>
+  <a href="../chapters/analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Analysis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#msr145" id="toc-msr145" class="nav-link active" data-scroll-target="#msr145"><span class="toc-section-number">3.1</span>  MSR145</a></li>
-  <li><a href="#hoboware" id="toc-hoboware" class="nav-link" data-scroll-target="#hoboware"><span class="toc-section-number">3.2</span>  HOBOware</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Configuration</span></h1>
+<h1 class="title"><span id="sec-config" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Configuration</span></span></h1>
 </div>
 
 
@@ -165,44 +180,101 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
 
-<p>Prior to each deployment of the Mini Buoy, the data logger will need to be fully charged, have a full memory, and be correctly configured according to the user’s requirements. The following section describes how to configure the MSR145W B4 (used in both the B4 and B4+ Mini Buoy designs) and HOBO Pendant G acceleration data loggers.</p>
-<section id="msr145" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="msr145"><span class="header-section-number">3.1</span> MSR145</h2>
+
+<p>Prior to each deployment of the Mini Buoy, the data logger will need to be fully charged, have a full memory, and be correctly configured according to the user’s requirements. The following section describes how to configure the MSR145W B4 (used in both the B4 and B4+ Mini Buoy designs) and HOBO Pendant G acceleration data loggers. Select the correct software tab according to the logger type being configured:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">MSR145</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">HOBOware</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>The MSR145W B4 comes with a USB charging cable. Free software to configure the logger can be downloaded <a href="https://www.msr.ch/en/support/msr-pc-software-standard/" target="_blank">here</a>. At present, the logger is only compatible with a Windows PC. To configure the MSR145W B4:</p>
 <ol type="1">
 <li>Download and install the <a href="https://www.msr.ch/en/support/pcsoftware/" target="_blank">MSR software</a></li>
 <li>Connect a logger to a Windows PC. A yellow LED will light up on the logger, indicating the internal battery is being charged. The light will extinguish once the battery is fully charged</li>
 <li>Open the MSR software</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If an error message appears saying “No hardware found!”, quit the program and reopen MSR.</p>
+</div>
+</div>
+<p>The MSR software differs depending on which model of MSR145W B4 was purchased. Whilst using different models does not affect the performance of a Mini Buoy, the setup procedure does differs. To confirm the model of the logger:</p>
+<p><strong>Find a good solution for this. ‘Info’ tab?</strong></p>
+<p>Once the logger model has been identified, select the correct tab and proceed with the setup.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">MSR145 C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">MSR145 B</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ol type="1">
 <li>Double-click <code>Setup</code></li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-centre">
 <figure class="figure">
-<p><img src="figs/MSRStep1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="figs/MSRStep1.png" class="img-fluid quarto-figure quarto-figure-centre figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<ol start="5" type="1">
+<ol start="2" type="1">
 <li>Select the <code>Format memory</code> tab</li>
 <li>Click <code>Format</code>. This will delete any data stored on the logger</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-centre">
 <figure class="figure">
-<p><img src="figs/MSRStep2.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="figs/MSRcFormat.png" class="img-fluid quarto-figure quarto-figure-centre figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<ol start="7" type="1">
+<ol start="4" type="1">
+<li>Once formatting is complete, select the <code>Limit</code> tab</li>
+<li>Select Ax and press CHANGE. Then under the drop down tab for ‘Record condition’ select NEVER then press OK. Complete the same process for Az. Leave Ay at ‘always’ as we will only be taking acceleration measurements on the y axis to conserve logger memory and battery usage.</li>
+<li>Select the USER SETTINGS tab.</li>
+<li>Rename the logger a suitable name. For example, data logger 1 for Rockcliffe would be RC-01. Make sure to record this with the serial number of the logger so that it can be tracked.</li>
+<li>Select the BASIC SETTINGS tab.</li>
+<li>Under the ‘Task A’ section of ‘Sensors’ make sure it is set to 1s.</li>
+<li>Set the logger to start at a suitable time, a good way to estimate is to check the tide times and calculate it to start 2 hours before high tide.</li>
+<li>Tick ‘Consider limit’</li>
+<li>Untick any ’Options during record’0.</li>
+<li>Press start. The ‘Status’ record on the left should now read “Record starts on 20XX-XX-XX HH:MM”. If the Status record still says “inactive”, it will not record once the set start time is reached.</li>
+</ol>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ol type="1">
+<li>Double-click <code>Setup</code></li>
+</ol>
+<div class="quarto-figure quarto-figure-centre">
+<figure class="figure">
+<p><img src="figs/MSRStep1.png" class="img-fluid quarto-figure quarto-figure-centre figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<ol start="2" type="1">
+<li>Select the <code>Format memory</code> tab</li>
+<li>Click <code>Format</code>. This will delete any data stored on the logger</li>
+</ol>
+<div class="quarto-figure quarto-figure-centre">
+<figure class="figure">
+<p><img src="figs/MSRStep2.png" class="img-fluid quarto-figure quarto-figure-centre figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<ol start="4" type="1">
 <li>Once formatting is complete, select the <code>User settings</code> tab</li>
 <li>Set the acceleration sensor measure range to <code>2G</code></li>
 <li>You can define a name for the logger under <code>Name of logger</code></li>
 <li>Click <code>Write user settings</code></li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-centre">
 <figure class="figure">
-<p><img src="figs/MSRStep3.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="figs/MSRStep3.png" class="img-fluid quarto-figure quarto-figure-centre figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<ol start="11" type="1">
+<ol start="8" type="1">
 <li>Under <code>Record control</code>, check the <code>Limits active</code> box</li>
 <li>Select the <code>Limits</code> tab. We can use limits to effectively disable the X and Y sensors by setting unrealistically high acceleration limits. This will allow your logger to store more Y acceleration data.</li>
 <li>For the <strong>ACC x</strong> channel, select <code>&lt;L1 or &gt;L2, (Shock)</code> from the record limit drop-down menu (click on the cell to make the drop-down menu visible)</li>
@@ -211,17 +283,17 @@ ul.task-list li input[type="checkbox"] {
 <li>Make sure there are no limits set on the ACC y channel by selecting <code>inactive</code> from the record limit drop-down menu</li>
 <li>Click the <code>&lt;</code> button in the bottom-left of the window</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-centre">
 <figure class="figure">
-<p><img src="figs/MSRStep4.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="figs/MSRStep4.png" class="img-fluid quarto-figure quarto-figure-centre figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<ol start="18" type="1">
+<ol start="15" type="1">
 <li>Select the <code>Basic settings</code> tab</li>
 <li>Under <code>Sensors</code>, select <code>t1</code> from the <code>ACC x, y, z</code> drop-down menu</li>
 <li>Under <code>Main storage rate</code>, set <code>t1=</code> to the desired sampling rate in seconds
 <ul>
-<li>The Mini Buoy has been calibrated to accept sampling rates between 1 and 10 seconds. Refer to the table in <a href="intro.html"><span>Chapter&nbsp;1</span></a> for sampling duration (this is more accurate than the <code>Prediction</code> tool that underestimates memory capacity as it does not take into account the limit settings).</li>
+<li>The Mini Buoy has been calibrated to accept sampling rates between 1 and 10 seconds. Refer to the table in <a href="intro.html" class="quarto-xref"><span>Chapter 1</span></a> for sampling duration (this is more accurate than the <code>Prediction</code> tool that underestimates memory capacity as it does not take into account the limit settings).</li>
 </ul></li>
 <li>Check the <code>Start at</code> box, and set the date and time shortly after your planned deployment</li>
 <li>Under <code>Options during record</code>, uncheck all options. This will extend the battery life of the logger</li>
@@ -229,14 +301,16 @@ ul.task-list li input[type="checkbox"] {
 <li>Click <code>Exit</code> and disconnect the MSR145W B4 logger from the computer</li>
 <li>A blue light will begin to flash, confirming the logger is primed and ready to begin logging when the start date and time is reached</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-centre">
 <figure class="figure">
-<p><img src="figs/MSRStep5.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="figs/MSRStep5.png" class="img-fluid quarto-figure quarto-figure-centre figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-</section>
-<section id="hoboware" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="hoboware"><span class="header-section-number">3.2</span> HOBOware</h2>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>The Pendant G Data Logger comes with the free <a href="https://www.onsetcomp.com/hoboware-free-download/" target="_blank">HOBOware</a> software to configure the logger. HOBOware is compatible with Windows and macOS operating systems. To configure the HOBO Pendant:</p>
 <ol type="1">
 <li>Download and install the free <a href="https://www.onsetcomp.com/hoboware-free-download/" target="_blank">HOBOware</a> software</li>
@@ -247,20 +321,22 @@ ul.task-list li input[type="checkbox"] {
 <li>In the <code>Sensors</code> tab and in the <code>Configure Sensors to Log</code> section, check the <code>X-Axis Acceleration (+/- 3g)</code> box</li>
 <li>From the <code>Deployments</code> tab, set the <code>Logging Interval</code> to the desired sampling rate using the drop-down menu. Increasing the sampling rate will increase the logging duration (calculated based on the logging rate and battery status of the device).
 <ul>
-<li>The Mini Buoy has been calibrated to sampling rates of 1 minute, thus, this is the recommended sampling rate setting, rendering 45 logging days at full battery (refer to the table in <a href="intro.html"><span>Chapter&nbsp;1</span></a> for other sampling rates that can be used with Hobo pendant G loggers).</li>
+<li>The Mini Buoy has been calibrated to sampling rates of 1 minute, thus, this is the recommended sampling rate setting, rendering 45 logging days at full battery (refer to the table in <a href="intro.html" class="quarto-xref"><span>Chapter 1</span></a> for other sampling rates that can be used with Hobo pendant G loggers).</li>
 </ul></li>
 <li>In the <code>Deployments</code> tab, set the <code>Start Logging</code> date and time for shortly after your planned deployment<br>
 </li>
 <li>Click <code>Delayed Start</code> and disconnect the Pendant logger from the computer.</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-centre">
 <figure class="figure">
-<p><img src="figs/HOBOStep1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="figs/HOBOStep1.png" class="img-fluid quarto-figure quarto-figure-centre figure-img" style="width:70.0%"></p>
 </figure>
+</div>
+</div>
+</div>
 </div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -290,9 +366,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -328,10 +418,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -341,8 +448,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -354,9 +470,245 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -398,17 +750,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/assembly.html" class="pagination-link">
+      <a href="../chapters/assembly.html" class="pagination-link" aria-label="Assembly">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Assembly</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/deployment.html" class="pagination-link">
+      <a href="../chapters/deployment.html" class="pagination-link" aria-label="Deployment">
         <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Deployment</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

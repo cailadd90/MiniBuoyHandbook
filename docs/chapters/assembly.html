@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,8 +62,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -70,13 +78,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/assembly.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Assembly</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/assembly.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Assembly</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -85,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">The Mini Buoy Handbook</a> 
@@ -149,18 +157,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#b4" id="toc-b4" class="nav-link active" data-scroll-target="#b4"><span class="header-section-number">2.1</span> B4</a></li>
-  <li><a href="#b4-1" id="toc-b4-1" class="nav-link" data-scroll-target="#b4-1"><span class="header-section-number">2.2</span> B4+</a></li>
-  <li><a href="#pendant" id="toc-pendant" class="nav-link" data-scroll-target="#pendant"><span class="header-section-number">2.3</span> Pendant</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -180,51 +180,53 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
 
-<p>Depending on their requirements, the user has a choice of three Mini Buoy designs for measuring hydrodynamics (see <a href="intro.html"><span>Chapter&nbsp;1</span></a>). In the following steps, we provide instructions for the assembly of each design.</p>
-<section id="b4" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="b4"><span class="header-section-number">2.1</span> B4</h2>
-<p>The B4 is a transparent and self-standing centrifuge tube with an MSR145W B4<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> acceleration logger sealed inside and supported by floral foam. The tube is tethered to an anchor using fishing swivels attached through two holes in the centrifuge tube skirt. To build a B4, first gather the following equipment:</p>
+
+<p>Depending on their requirements, the user has a choice of three Mini Buoy designs for measuring hydrodynamics (see <a href="intro.html" class="quarto-xref"><span>Chapter 1</span></a>). In the following steps, we provide instructions for the assembly of each design.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">B4</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">B4+</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Pendant</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>The B4 is a transparent and self-standing centrifuge tube with an MSR145W B4<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> acceleration logger sealed inside. The tube is anchored to the ground by fishing swivels. To build a B4, first gather the following equipment:</p>
 <ul>
 <li>50 mL clear self-standing centrifuge tube</li>
 <li>Label</li>
 <li>Floral foam</li>
-<li><a href="https://www.msr.ch/en/product/msr145/" target="_blank">MSR145W B4</a> acceleration data logger</li>
+<li>MSR145W B4 acceleration data logger</li>
 <li>Silicone sealant</li>
-<li>Drill with a 4 mm dowel bit</li>
+<li>Drill with a 3.5 mm dowel bit</li>
 <li>3 × 5 cm (1.1 g) fishing swivels</li>
 </ul>
 <p>To assemble the B4 Mini Buoy:</p>
 <ol type="1">
 <li>Place a label inside the centrifuge tube, with the text legible through the plastic, indicating the owner, a “do not remove” notice, and contact details</li>
 <li>Insert a 3 cm cylinder of floral foam into the centrifuge tube. This ensures the logger is positioned at the top of the tube</li>
-<li>Roughly cut a 5 cm cylinder of floral foam with matching diameter of the centrifuge tube and cut down the middle</li>
-<li>Place both halves around the configured MSR145W B4 acceleration data logger, then gently push the logger into the centrifuge tube with the PC connector facing outwards. The floral foam will prevent the logger from moving inside the tube</li>
-<li>Apply silicone sealant around the screw thread of the centrifuge tube and fasten the cap</li>
-<li>Apply more sealant along the rim of the centrifuge cap if necessary</li>
+<li>Roughly cut a 5 cm long cylinder from the floral foam that matches the diameter of the centrifuge tube</li>
+<li>Cut the floral foam cylinder down the middle</li>
+<li>Place both halves around a configured MSR145W B4 logger (see <a href="configuration.html" class="quarto-xref"><span>Chapter 3</span></a>), then gently push the logger into the centrifuge tube <strong>with the PC connector facing upright</strong> to secure the logger in the tube</li>
+<li>Apply silicone sealant around the screw thread of the centrifuge tube and fasten the tube cap</li>
+<li>Close the lid of the centrifuge tube, and wipe away any excess silicone to give a clean finish</li>
 <li>Drill two holes at opposite ends through the centrifuge tube skirt 5 mm from the bottom</li>
 <li>Fix two fishing swivels through each hole, and connect both to another swivel as shown:</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-centre">
 <figure class="figure">
-<p><img src="figs/B4FishingSwivel.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="figs/B4FishingSwivel.png" class="img-fluid quarto-figure quarto-figure-centre figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-</section>
-<section id="b4-1" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="b4-1"><span class="header-section-number">2.2</span> B4+</h2>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>The B4+ almost identical in design to the B4, with some modifications: the centrifuge tube is UV-resistant without a skirt, an eye bolt and fishing line rings are fitted to provide more durability, and steel shot is added to the tube to increase sensitivity to current and wave action. Gather the following equipment to assemble the B4+:</p>
 <ul>
 <li>50 mL UV-blocking centrifuge tube</li>
 <li>Sand paper</li>
-<li>Drill with a 4 mm dowel bit</li>
+<li>Drill with a 3.5 mm dowel bit</li>
 <li>M4 Eye bolt and nut</li>
-<li>M4 rubber washer</li>
-<li>M4 long socket</li>
+<li>Flathead screwdriver</li>
 <li>Epoxy glue</li>
-<li>M32 O-rings</li>
-<li>20 g lead shot weight</li>
+<li>20 g steel shot weight</li>
 <li>Floral foam</li>
 <li>Waterproof label</li>
 <li>250 lb / 113 kg nylon coated 1×7 steel strand fishing line</li>
@@ -236,65 +238,91 @@ ul.task-list li input[type="checkbox"] {
 <p>To assemble the B4+ Mini Buoy:</p>
 <ol type="1">
 <li>Abrade the bottom of the centrifuge tube (this removes any lubricant on the tube and creates a better surface for the epoxy glue to bond with)</li>
-<li>Drill a 4 mm hole in the bottom of the centrifuge tube</li>
-<li>Thread the eye bolt through the hole</li>
-<li>Place the rubber washer over the eye bolt thread from inside the tube</li>
-<li>Dab some epoxy glue around the eye bolt (inside and out) to seal the hole</li>
-<li>Secure the nut in place using the long socket</li>
+<li>Drill a 3.5 mm hole in the bottom of the centrifuge tube using the dowel bit on a high-speed setting</li>
+<li>Remove any plastic debris that may be blocking the hole on the inside of the centrifuge tube using the flathead screwdriver</li>
+<li>Select an eye bolt and nut. Check whether the eye bolt easily threads onto the bolt. If not, discard the bolt</li>
+<li>Drop the nut into the centrifuge tube and gently shake the tube until the nut is oriented above the hole</li>
+<li>Using the flathead screwdriver to hold the bolt in place, thread the eye bolt through the hole and screw it into the nut until finger tight (overtightening may damage the centrifuge tube)</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/B4pEyeHook.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-</figure>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>As the nut threads around the bolt, it should eventually become lodged between the sides of the centrifuge tube allowing for a finger tight fit. If the eye bolt continues to twist, unthread the eye bolt, discard it, and try again with a different eye bolt (sometimes the threading is too short and the nut cannot hold fast between the thread and centrifuge tube).</p>
+</div>
 </div>
 <ol start="7" type="1">
-<li>To ensure watertightness, install a rubber o-ring around the inside lip of the lid using tweezers as shown:</li>
+<li>Mix the epoxy glue according to manufacturer instructions</li>
+<li>Dab some expoxy glue around the eye bolt, ensuring there’s enough glue to cover any gaps that might allow water into the tube</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-centre">
 <figure class="figure">
-<p><img src="figs/B4pLidSeal.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="figs/B4pEyeHook.jpg" class="img-fluid quarto-figure quarto-figure-centre figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<ol start="8" type="1">
-<li>Pour 20 g of steel shot into the tube. The shot reduces the buoyancy of the Mini Buoy, making it less stable in the water column. This has been shown to improve the accelerometer sensitivity</li>
-<li>Cut a 3 cm length cylinder from the floral foam that will fit comfortably into the tube</li>
+<ol start="9" type="1">
+<li>Allow the epoxy glue to cure according to manufacturer specifications</li>
+<li>Pour 20 g of steel shot into the tube.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Adding shot reduces the buoyancy of the Mini Buoy, making it less stable in the water column. This has been shown to improve the accelerometer sensitivity to detecting currents and waves.</p>
+</div>
+</div>
+<ol start="11" type="1">
+<li>Cut a 3 cm long cylinder from the floral foam that will fit comfortably into the tube</li>
 <li>Insert the floral foam cylinder into the tube. This holds the steel shot in place and ensures the logger is positioned at the top of the tube<br>
 </li>
 <li>Attach a waterproof label onto the centrifuge tube indicating the owner, a “do not remove” notice, and contact details</li>
 <li>Thread the fishing line through a crimp sleeve and loop the fishing line back on itself to form a ring of ~2 cm diameter</li>
 <li>Crimp the sleeve so it fits tightly around the fishing line</li>
 <li>Thread another fishing line through a new crimp sleeve, then through the eye bolt and first fishing line ring</li>
-<li>Adjust the diameter of the ring so the total chain length is 4 cm, then crimp (the B4+ has been calibrated to measure hydrodynamics 4 cm above the tidal flat). The tether should look as follows:</li>
+<li>Adjust the diameter of the ring so the total chain length is 4 cm, then crimp</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-centre">
 <figure class="figure">
-<p><img src="figs/B4pFishingLineChain.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="figs/B4pFishingLineChain.jpg" class="img-fluid quarto-figure quarto-figure-centre figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<ol start="16" type="1">
-<li>Roughly cut a 5 cm cylinder of floral foam with matching diameter of the centrifuge tube and cut down the middle</li>
-<li>Place both halves around the configured MSR145W B4 acceleration data logger, then gently push the logger into the centrifuge tube with the PC connector facing upright. The floral foam will prevent the logger from moving inside the tube</li>
+<ol start="18" type="1">
+<li>Roughly cut a 5 cm long cylinder from the floral foam that matches the diameter of the centrifuge tube Cut the floral foam cylinder down the middle</li>
+<li>Place both halves around a configured MSR145W B4 logger (see <a href="configuration.html" class="quarto-xref"><span>Chapter 3</span></a>), then gently push the logger into the centrifuge tube <strong>with the PC connector facing upright</strong> to secure the logger in the tube</li>
 <li>Apply silicone sealant around the screw thread of the centrifuge tube and fasten the tube cap</li>
-<li>Apply more sealant along the rim of the centrifuge cap</li>
+<li>Close the lid of the centrifuge tube, and wipe away any excess silicone to give a clean finish</li>
 </ol>
-</section>
-<section id="pendant" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="pendant"><span class="header-section-number">2.3</span> Pendant</h2>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>The Pendant<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> can be directly tethered to a pole in the ground using fishing swivels as the logger itself is buoyant and waterproof. Gather the following equipment:</p>
 <ul>
-<li><a href="https://www.onsetcomp.com/products/data-loggers/ua-004-64/" target="_blank">HOBO Pendant G</a> acceleration data logger</li>
-<li><a href="https://www.onsetcomp.com/products/communications/base-u-4" target="_blank">HOBO Optic USB Base Station</a> necessary for connecting the logger to the PC</li>
+<li>HOBO Pendant G acceleration data logger</li>
+<li>HOBO Optic USB Base Station necessary for connecting the logger to the PC</li>
 <li>5 cm (1.1 g) fishing swivel</li>
 </ul>
 <p>To assemble the Pendant Mini Buoy, simply attach the fishing swivel to the anchor point on the Pendant logger as shown:</p>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-centre">
 <figure class="figure">
-<p><img src="figs/PendantTether.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="figs/PendantTether.png" class="img-fluid quarto-figure quarto-figure-centre figure-img" style="width:70.0%"></p>
 </figure>
+</div>
+</div>
+</div>
 </div>
 
 
-</section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
@@ -383,10 +411,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -396,8 +441,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -409,7 +463,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -453,6 +630,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -478,6 +656,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -539,17 +743,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/intro.html" class="pagination-link">
+      <a href="../chapters/intro.html" class="pagination-link" aria-label="Introduction">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/configuration.html" class="pagination-link">
+      <a href="../chapters/configuration.html" class="pagination-link" aria-label="Configuration">
         <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Configuration</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 
