@@ -12,7 +12,7 @@ book:
     - Christian Schwarz
     - Thorsten Balke
     
-  date: "24/06/2024"
+  date: "06/01/2024"
   chapters:
     - index.qmd
     - chapters/intro.qmd

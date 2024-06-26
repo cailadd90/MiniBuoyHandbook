@@ -6,7 +6,7 @@ There are presently three Mini Buoy designs featured in this handbook, each with
 * **B4+** is a more durable version of the original Mini Buoy ideal for long term deployments. The B4+ has a UV-resistant casing without the skirt and a metal eye bolt connected to a mooring by crimped fishing line rings. In addition to measuring inundation duration and current velocity, the B4+ has been calibrated to measure wave orbital velocities. Whilst the durability and functionality may be improved, the B4+ requires more effort to assemble.
 * **Pendant** is an integrated accelerometer data logger, float, and anchor point, attached to a pole by a fishing swivel. The Pendant is less expensive and easier to assemble than the B4 and B4+, however memory capacity and sampling rates are lower. Because of the low sampling rate, the Pendant is unstable for measuring wave orbital velocity.
 
-![](figs/MiniBuoysPhotos.png){fig-align='centre'}
+![](figs/MiniBuoysPhotos.png){fig-align='center'}
 
 Once assembled, Mini Buoys can be used in single, comparative, or multiple deployments for purposes of habitat restoration potential mapping, flood risk monitoring, and citizen science engagement.
 
@@ -29,18 +29,18 @@ Once assembled, Mini Buoys can be used in single, comparative, or multiple deplo
 
 Inundation duration, current velocity, and wave orbital velocity parameters can all be derived from acceleration data.[^1] For an accelerometer mounted in a tethered float, the change in tilt from 0 to 90° indicates a change in the position of the device from lying horizontally on the tidal flat to floating vertically in the water column as the tide comes in. A return of the tilt to 0° indicates the tide has retreated and the Mini Buoy is once again lying flat. The time when the Mini Buoy deviated from the horizontal position gives the inundation duration of the tide. When the Mini Buoy is fully inundated, any tilting away from the vertical position is caused by a current pushing against the buoy. The stronger the current, the stronger the tilt. When waves pass over the Mini Buoy, they cause it to wobble. Moving standard deviation in the tilt over a sufficient time window captures the average wave orbital velocity near the bed. The greater the standard deviation, the greater the wave orbital velocity.
 
-![](figs/MiniBuoyMotion.png){fig-align='centre'}
+![](figs/MiniBuoyMotion.png){fig-align='center'}
 
 Testing has shown that inundation status is correctly identified at rates of 87-99% across all designs. To identify the inundation status of a Mini Buoy from acceleration data, an algorithm classifies inundated and non-inundated cases using the median and interquartile range in acceleration per minute. Median and interquartile range values are near zero for a Mini Buoy at rest, and are larger when a Mini Buoy is inundated.
 
-![](figs/PartitionPlot.png){fig-align='centre' width=70%}
+![](figs/PartitionPlot.png){fig-align='center' width=70%}
 
 Partially inundated cases are then identified using an abrupt shift detection algorithm (Boulton, 2022) that searches for the continuous change in Mini Buoy tilt from 0 to ~90° at the start of the flood tide and ~90 to 0° at the end of the ebb tide, characteristic of partially inundated cases.
 
-![](figs/InundationEvent.png){fig-align='centre' width=70%}
+![](figs/InundationEvent.png){fig-align='center' width=70%}
 
 To calibrate acceleration and velocity, Mini Buoys were deployed adjacent to state-of-the-art sensors that measure water velocity directly. Current velocities as low as 0.01 m/s and as high as 0.75 m/s can be detected with good accuracy (Figures A-C below). The B4+ is reasonable at measuring wave orbital velocities up to 0.3 m/s (Figure D below).
 
-![](figs/Calibration.png){fig-align='centre' width=70%}
+![](figs/Calibration.png){fig-align='center' width=70%}
 
 [^1]: A comprehensive description of the Mini Buoy calibrations is given in Ladd et al. (2023).

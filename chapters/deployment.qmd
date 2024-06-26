@@ -17,4 +17,4 @@ To install the Mini Buoy:
 2. Attach the end of the fishing line chain to the anchor using the cable tie
 3. Move the Mini Buoy 360° around the anchor, and remove any obstructing objects
 
-![](figs/MiniBuoyDeployment.jpg){fig-align='centre' width=70%}
+![](figs/MiniBuoyDeployment.jpg){fig-align='center' width=70%}

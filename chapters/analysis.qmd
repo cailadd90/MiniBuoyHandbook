@@ -2,7 +2,7 @@
 
 The Mini Buoy App is an open-source tool for reading and interpreting data gathered by any of the three Mini Buoy designs.
 
-![](figs/About.png){fig-align='centre' width=100%}
+![](figs/About.png){fig-align='center' width=100%}
 
 ## Installation
 
@@ -53,7 +53,7 @@ Selecting a location to save outputs is optional. If not set, the App defaults t
 Formats for exported data (`.csv` or `.xlsx`) and figures (`.jpg`, `.pdf`, or `.rdata`) can be chosen, and figure title, prefix, and theme can be chosen.
 :::
 
-![](figs/Settings.png){fig-align='centre' width=100%}
+![](figs/Settings.png){fig-align='center' width=100%}
 
 ### Upload data {#sec-default}
 
@@ -68,7 +68,7 @@ Users have the option of uploading their own data, or using a default dataset su
 Please ensure the data has been exported from the Mini Buoy in the correct format (see @sec-export). 
 :::
 
-![](figs/DataUpload.png){fig-align='centre' width=100%}
+![](figs/DataUpload.png){fig-align='center' width=100%}
 
 ### Filter data (optional)
 
@@ -78,7 +78,7 @@ Users may wish to 'clean' the data before analysis to remove any spurious data (
 2. Enter the start and end datetimes and select `Apply filter` for target and reference datasets as applicable.
 3. Select `Render figure` to view raw data. The filtered data will be displayed. See **Troubleshooting** to see how the raw data should look.
 
-![](figs/DataFilter.png){fig-align='centre' width=100%}
+![](figs/DataFilter.png){fig-align='center' width=100%}
 
 ### Hydrodynamics
 
@@ -94,7 +94,7 @@ Inundation, current velocity, and wave orbital velocity (if B4+ Mini Buoy is use
 Given that only the B4+ Mini Buoy measures wave orbital velocity, no statistics for wave orbital velocity will be generated when other Mini Buoy designs are used.
 :::
 
-![](figs/HydroSingle.png){fig-align='centre' width=100%}
+![](figs/HydroSingle.png){fig-align='center' width=100%}
 
 #### Custom settings {#sec-custom}
 
@@ -107,7 +107,7 @@ Custom settings determine how the App cleans inundation classifications to achie
 
 Examples are given in the **TROUBLESHOOT TBC** chapter to help users identify where issues may be occurring and how to remedy them. It can be good practice to modify the `Custom settings` and see what effect that has on the results - which may be negligible.
 
-![](figs/CustomSettings.png){fig-align='centre' width=100%}
+![](figs/CustomSettings.png){fig-align='center' width=100%}
 
 #### Summary
 
@@ -117,17 +117,17 @@ The summary text provides a simple language overview of key results, to ascertai
 
 ::: panel-tabset
 ## Raw data
-![Tilt of the Mini Buoy over time, colour-coded to show the inundation status (non/partial/full) as classified by the App. This plot is a useful check to confirm whether the classification was successful (see @sec-custom) ](figs/RawData.png){fig-align='centre' width=100%}
+![Tilt of the Mini Buoy over time, colour-coded to show the inundation status (non/partial/full) as classified by the App. This plot is a useful check to confirm whether the classification was successful (see @sec-custom) ](figs/RawData.png){fig-align='center' width=100%}
 
 ## Daily inundation
-![Daily inundation duration per day. Spring/neap tidal cycles and periods of emersion (no inundation) can be easily detected.](figs/InundationData.png){fig-align='centre' width=100%}
+![Daily inundation duration per day. Spring/neap tidal cycles and periods of emersion (no inundation) can be easily detected.](figs/InundationData.png){fig-align='center' width=100%}
 
 ## Current velocity
-![Current velocities per day. The point represents median values per day, and the size of the points is scaled to the number of inundation events per day (the larger the point, the more inundation events there were). The top error bar represents the largest velocities (expressed as the upper 95th percentile of velocities) whilst the bottom error bar represents the smallest velocities detected per day.](figs/CurrentsData.png){fig-align='centre' width=100%}
+![Current velocities per day. The point represents median values per day, and the size of the points is scaled to the number of inundation events per day (the larger the point, the more inundation events there were). The top error bar represents the largest velocities (expressed as the upper 95th percentile of velocities) whilst the bottom error bar represents the smallest velocities detected per day.](figs/CurrentsData.png){fig-align='center' width=100%}
 
 ## Wave orbital velocity
-![Wave orbital velocities per day. The point represents median values per day, and the size of the points is scaled to the number of inundation events per day (the larger the point, the more inundation events there were). The top error bar represents the largest velocities (expressed as the upper 95th percentile of velocities) whilst the bottom error bar represents the smallest velocities detected per day.](figs/WaveData.png){fig-align='centre' width=100%}
+![Wave orbital velocities per day. The point represents median values per day, and the size of the points is scaled to the number of inundation events per day (the larger the point, the more inundation events there were). The top error bar represents the largest velocities (expressed as the upper 95th percentile of velocities) whilst the bottom error bar represents the smallest velocities detected per day.](figs/WaveData.png){fig-align='center' width=100%}
 
 ## Ebb-flood comparison
-![Timing of current velocities for the ebb (expressed with negative values) and flood (expressed with positive values) to/from high tide (slack water) for the longest inundation event detected by the App. This is a useful way to determine whether the may be any asymmetry in the tide (e.g., flood dominance where the duration of inundation on the flood tide is shorter and has larger currents), which has implications for the direction of net sediment transport.](figs/EbbFloodData.png){fig-align='centre' width=100%}
+![Timing of current velocities for the ebb (expressed with negative values) and flood (expressed with positive values) to/from high tide (slack water) for the longest inundation event detected by the App. This is a useful way to determine whether the may be any asymmetry in the tide (e.g., flood dominance where the duration of inundation on the flood tide is shorter and has larger currents), which has implications for the direction of net sediment transport.](figs/EbbFloodData.png){fig-align='center' width=100%}
 :::

@@ -26,12 +26,12 @@ Once the logger model has been identified, select the correct tab and proceed wi
 
 1. Double-click `Setup`
 
-![](figs/MSRStep1.png){fig-align='centre' width=70%}
+![](figs/MSRStep1.png){fig-align='center' width=70%}
 
 2. Select the `Format memory` tab
 3. Click `Format`. This will delete any data stored on the logger
 
-![](figs/MSRcFormat.png){fig-align='centre' width=70%}
+![](figs/MSRcFormat.png){fig-align='center' width=70%}
 
 4. Once formatting is complete, select the `Limit` tab
 5.	Select Ax and press CHANGE. Then under the drop down tab for ‘Record condition’ select NEVER then press OK. Complete the same process for Az. Leave Ay at ‘always’ as we will only be taking acceleration measurements on the y axis to conserve logger memory and battery usage.
@@ -48,19 +48,19 @@ Once the logger model has been identified, select the correct tab and proceed wi
 
 1. Double-click `Setup`
 
-![](figs/MSRStep1.png){fig-align='centre' width=70%}
+![](figs/MSRStep1.png){fig-align='center' width=70%}
 
 2. Select the `Format memory` tab
 3. Click `Format`. This will delete any data stored on the logger
 
-![](figs/MSRStep2.png){fig-align='centre' width=70%}
+![](figs/MSRStep2.png){fig-align='center' width=70%}
 
 4. Once formatting is complete, select the `User settings` tab
 5. Set the acceleration sensor measure range to `2G`
 6. You can define a name for the logger under `Name of logger`
 7. Click `Write user settings`
 
-![](figs/MSRStep3.png){fig-align='centre' width=70%}
+![](figs/MSRStep3.png){fig-align='center' width=70%}
 
 8. Under `Record control`, check the `Limits active` box
 9. Select the `Limits` tab. We can use limits to effectively disable the X and Y sensors by setting unrealistically high acceleration limits. This will allow your logger to store more Y acceleration data.
@@ -70,7 +70,7 @@ Once the logger model has been identified, select the correct tab and proceed wi
 13. Make sure there are no limits set on the ACC y channel by selecting `inactive` from the record limit drop-down menu
 14. Click the `<` button in the bottom-left of the window
 
-![](figs/MSRStep4.png){fig-align='centre' width=70%}
+![](figs/MSRStep4.png){fig-align='center' width=70%}
 
 15. Select the `Basic settings` tab
 16. Under `Sensors`, select `t1` from the `ACC x, y, z` drop-down menu
@@ -82,7 +82,7 @@ Once the logger model has been identified, select the correct tab and proceed wi
 21. Click `Exit` and disconnect the MSR145W B4 logger from the computer
 22. A blue light will begin to flash, confirming the logger is primed and ready to begin logging when the start date and time is reached
 
-![](figs/MSRStep5.png){fig-align='centre' width=70%}
+![](figs/MSRStep5.png){fig-align='center' width=70%}
 
 :::
 ## HOBOware
@@ -100,6 +100,6 @@ The Pendant G Data Logger comes with the free [HOBOware](https://www.onsetcomp.c
 7. In the `Deployments` tab, set the `Start Logging` date and time for shortly after your planned deployment  
 8. Click `Delayed Start` and disconnect the Pendant logger from the computer.
 
-![](figs/HOBOStep1.png){fig-align='centre' width=70%}
+![](figs/HOBOStep1.png){fig-align='center' width=70%}
 
 :::

@@ -27,7 +27,7 @@ To assemble the B4 Mini Buoy:
 8. Drill two holes at opposite ends through the centrifuge tube skirt 5 mm from the bottom
 9. Fix two fishing swivels through each hole, and connect both to another swivel as shown:
 
-![](figs/B4FishingSwivel.png){fig-align='centre' width=70%}
+![](figs/B4FishingSwivel.png){fig-align='center' width=70%}
 
 ## B4+
 
@@ -64,7 +64,7 @@ As the nut threads around the bolt, it should eventually become lodged between t
 7. Mix the epoxy glue according to manufacturer instructions
 8. Dab some expoxy glue around the eye bolt, ensuring there’s enough glue to cover any gaps that might allow water into the tube
 
-![](figs/B4pEyeHook.jpg){fig-align='centre' width=70%}
+![](figs/B4pEyeHook.jpg){fig-align='center' width=70%}
 
 9. Allow the epoxy glue to cure according to manufacturer specifications
 10. Pour 20 g of steel shot into the tube. 
@@ -81,7 +81,7 @@ Adding shot reduces the buoyancy of the Mini Buoy, making it less stable in the 
 16. Thread another fishing line through a new crimp sleeve, then through the eye bolt and first fishing line ring
 17. Adjust the diameter of the ring so the total chain length is 4 cm, then crimp
 
-![](figs/B4pFishingLineChain.jpg){fig-align='centre' width=70%}
+![](figs/B4pFishingLineChain.jpg){fig-align='center' width=70%}
 
 18. Roughly cut a 5 cm long cylinder from the floral foam that matches the diameter of the centrifuge tube
 Cut the floral foam cylinder down the middle
@@ -99,7 +99,7 @@ The Pendant[^2] can be directly tethered to a pole in the ground using fishing s
 
 To assemble the Pendant Mini Buoy, simply attach the fishing swivel to the anchor point on the Pendant logger as shown:
 
-![](figs/PendantTether.png){fig-align='centre' width=70%}
+![](figs/PendantTether.png){fig-align='center' width=70%}
 
 :::
 
