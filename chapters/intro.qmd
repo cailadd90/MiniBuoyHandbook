@@ -10,20 +10,20 @@ There are presently three Mini Buoy designs featured in this handbook, each with
 
 Once assembled, Mini Buoys can be used in single, comparative, or multiple deployments for purposes of habitat restoration potential mapping, flood risk monitoring, and citizen science engagement.
 
+
 |                          | B4               | B4+              | Pendant           |
 |:-------------------------|:----------------:|:----------------:|:-----------------:|
 | Cost                     | £350             | £350             | £160              |
 | Total weight             | 42.3 g           | 60.0 g           | 19.9 g            |
 | Sensing height above bed | 16 cm            | 16 cm            | 10.5 cm           |
-| Deployment duration      | 1 s: 24 days     | 1 s: 25 days     | 20 sec: 15 days   |
-| Deployment duration      | 2 s: 48 days     | 2 s: 48 days     | 1 min: 45.2 days  |
-| Deployment duration      | 5 s: 120 days    | 5 s: 120 days    | 2 min: 90.5 days  |
-| Deployment duration      | 10 s: 240 days   | 10 s: 240 days   | 10 min: 1.2 years |
+| Shortest survey duration | 25 days          | 25 days          | 15 days           |
+| Longest survey duration  | 240 days         | 240 days         | 1.2 years         |
 | Currents detection limit | 0.043 m/s        | 0.018 m/s        | 0.048 m/s         |
 | Currents accuracy        | ±0.492 m/s       | ±0.138 m/s       | ±0.203 m/s        |
 | Waves detection limit    | -                | -0.007 m/s       | -                 |
 | Waves accuracy           | -                | ±0.172 m/s       | -                 |
 | Configuration            | Windows          | Windows          | Windows and macOS |
+
 
 ## Operating principles
 

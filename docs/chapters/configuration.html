@@ -184,16 +184,73 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Prior to each deployment of the Mini Buoy, the data logger will need to be fully charged, have a full memory, and be correctly configured according to the user’s requirements. The following section describes how to configure the MSR145W B4 (used in both the B4 and B4+ Mini Buoy designs) and HOBO Pendant G acceleration data loggers. Select the correct software tab according to the logger type being configured:</p>
+<p>Prior to each deployment of the Mini Buoy, the data logger will need to be fully charged, have a full memory, and be correctly configured according to the user’s requirements. The following section describes how to configure the MSR145W B4 (used in both the B4 and B4+ Mini Buoy designs) and HOBO Pendant G acceleration data loggers. Select the correct tab according to the logger’s software:</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">MSR145</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">HOBOware</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>The MSR145W B4 comes with a USB charging cable. Free software to configure the logger can be downloaded <a href="https://www.msr.ch/en/support/msr-pc-software-standard/" target="_blank">here</a>. At present, the logger is only compatible with a Windows PC. To configure the MSR145W B4:</p>
+<p>The free ‘MSR’ software to configure the MSR145W B4 logger can be downloaded <a href="https://www.msr.ch/en/support/msr-pc-software-standard/" target="_blank">here</a>. The software is only compatible with a Windows PC. The cable, provided with the logger, is used to both configure and charge the logger.</p>
+<p>To configure the MSR145W B4:</p>
 <ol type="1">
-<li>Download and install the <a href="https://www.msr.ch/en/support/pcsoftware/" target="_blank">MSR software</a></li>
-<li>Connect a logger to a Windows PC. A yellow LED will light up on the logger, indicating the internal battery is being charged. The light will extinguish once the battery is fully charged</li>
+<li>Download and install the MSR software onto a Windows PC</li>
+<li>Connect a logger via the cable provided. A yellow LED will light up on the logger, indicating the internal battery is being charged. The light will extinguish once the battery is fully charged</li>
 <li>Open the MSR software</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The MSR software appearance differs depending on which model of MSR145W B4 was purchased. Whilst using different models does not affect the performance of a Mini Buoy, the setup procedure differs.</p>
+</div>
+</div>
+<p>To confirm the model of the logger:</p>
+<ol type="1">
+<li>Double-click <code>Setup</code></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/MSRStep1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<ol start="2" type="1">
+<li>Under <code>General</code>, confirm whether <code>MSR type</code> is <code>MSR145C</code> or <code>MSR145B</code></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/ModelID.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<p>Select the correct tab to continue with the setup:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">MSR145C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">MSR145B</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ol type="1">
+<li>Select the <code>Format memory</code> tab</li>
+<li>Click <code>Format</code> &gt; <code>Yes</code>. This will delete any data stored on the logger</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/MSRcFormat.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<ol start="3" type="1">
+<li>Once formatting is complete, click <code>OK</code></li>
+<li>Select the <code>Limit</code> tab</li>
+<li>Click <code>Read</code></li>
+<li>Select <code>Channel 1 | Ax</code> and click <code>Change</code></li>
+<li>Under the <code>Record condition</code> drop-down menu, select <code>never</code></li>
+<li>Click <code>OK</code></li>
+<li>Select <code>Channel 3 | Az</code> and click <code>Change</code></li>
+<li>Under the <code>Record condition</code> drop-down menu, select <code>never</code></li>
+<li>Click <code>OK</code></li>
+<li>Click <code>Write</code></li>
 </ol>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -205,56 +262,97 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If an error message appears saying “No hardware found!”, quit the program and reopen MSR.</p>
+<p>Only <code>Channel 2 | Ay</code> should now display <code>always</code>. This means only acceleration data along the y-axis will be gathered. y-axis acceleration data is used to measure hydrodynamics.</p>
 </div>
 </div>
-<p>The MSR software differs depending on which model of MSR145W B4 was purchased. Whilst using different models does not affect the performance of a Mini Buoy, the setup procedure does differs. To confirm the model of the logger:</p>
-<p><strong>Find a good solution for this. ‘Info’ tab?</strong></p>
-<p>Once the logger model has been identified, select the correct tab and proceed with the setup.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">MSR145 C</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">MSR145 B</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<ol type="1">
-<li>Double-click <code>Setup</code></li>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/MSRcLimit.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<ol start="13" type="1">
+<li>Select the <code>User settings</code> tab</li>
+<li>Under <code>Name of logger</code>, enter a suitable ID for the logger</li>
+<li>Click <code>Write</code></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is good practice to keep a record of the logger name and serial number for data analysis.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/MSRcUserSettings.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<ol start="16" type="1">
+<li>Select the <code>Basic settings</code> tab</li>
+<li>Under <code>Sensors</code>, use the drop-down menu to select a sampling rate between <code>1s</code> and <code>10s</code></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sampling rate determines the precision of the data and the duration of a survey. A higher sampling rate improves precision but lowers survey duration. Use the table below to select an optimum balance between sampling rate and survey duration.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Sampling rate</th>
+<th style="text-align: center;">Survey duration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1s</td>
+<td style="text-align: center;">24 days</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2s</td>
+<td style="text-align: center;">48 days</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">5s</td>
+<td style="text-align: center;">120 days</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">10s</td>
+<td style="text-align: center;">240 days</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ol start="18" type="1">
+<li>Under <code>Record control</code>, set the logger to <code>Start at</code> a specific date and time</li>
+<li>Check <code>Consider limit</code></li>
+<li>Uncheck all options under <code>Options during record</code></li>
+<li>Click <code>Write basic settings</code></li>
+<li>Click <code>Start</code></li>
+<li>Under <code>Info and measurement parameters</code>, confirm that <code>State</code> reads <code>Record starts on yyyy-mm-dd hh:mm</code></li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="figs/MSRStep1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<p><img src="figs/MSRcBasicSettings.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<ol start="2" type="1">
-<li>Select the <code>Format memory</code> tab</li>
-<li>Click <code>Format</code>. This will delete any data stored on the logger</li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/MSRcFormat.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-<ol start="4" type="1">
-<li>Once formatting is complete, select the <code>Limit</code> tab</li>
-<li>Select Ax and press CHANGE. Then under the drop down tab for ‘Record condition’ select NEVER then press OK. Complete the same process for Az. Leave Ay at ‘always’ as we will only be taking acceleration measurements on the y axis to conserve logger memory and battery usage.</li>
-<li>Select the USER SETTINGS tab.</li>
-<li>Rename the logger a suitable name. For example, data logger 1 for Rockcliffe would be RC-01. Make sure to record this with the serial number of the logger so that it can be tracked.</li>
-<li>Select the BASIC SETTINGS tab.</li>
-<li>Under the ‘Task A’ section of ‘Sensors’ make sure it is set to 1s.</li>
-<li>Set the logger to start at a suitable time, a good way to estimate is to check the tide times and calculate it to start 2 hours before high tide.</li>
-<li>Tick ‘Consider limit’</li>
-<li>Untick any ’Options during record’0.</li>
-<li>Press start. The ‘Status’ record on the left should now read “Record starts on 20XX-XX-XX HH:MM”. If the Status record still says “inactive”, it will not record once the set start time is reached.</li>
-</ol>
+<p>The logger is now primed for data collection.</p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <ol type="1">
-<li>Double-click <code>Setup</code></li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/MSRStep1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-<ol start="2" type="1">
 <li>Select the <code>Format memory</code> tab</li>
 <li>Click <code>Format</code>. This will delete any data stored on the logger</li>
 </ol>
@@ -263,7 +361,7 @@ Important
 <p><img src="figs/MSRStep2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<ol start="4" type="1">
+<ol start="3" type="1">
 <li>Once formatting is complete, select the <code>User settings</code> tab</li>
 <li>Set the acceleration sensor measure range to <code>2G</code></li>
 <li>You can define a name for the logger under <code>Name of logger</code></li>
@@ -274,7 +372,7 @@ Important
 <p><img src="figs/MSRStep3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<ol start="8" type="1">
+<ol start="7" type="1">
 <li>Under <code>Record control</code>, check the <code>Limits active</code> box</li>
 <li>Select the <code>Limits</code> tab. We can use limits to effectively disable the X and Y sensors by setting unrealistically high acceleration limits. This will allow your logger to store more Y acceleration data.</li>
 <li>For the <strong>ACC x</strong> channel, select <code>&lt;L1 or &gt;L2, (Shock)</code> from the record limit drop-down menu (click on the cell to make the drop-down menu visible)</li>
@@ -288,7 +386,7 @@ Important
 <p><img src="figs/MSRStep4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<ol start="15" type="1">
+<ol start="14" type="1">
 <li>Select the <code>Basic settings</code> tab</li>
 <li>Under <code>Sensors</code>, select <code>t1</code> from the <code>ACC x, y, z</code> drop-down menu</li>
 <li>Under <code>Main storage rate</code>, set <code>t1=</code> to the desired sampling rate in seconds
