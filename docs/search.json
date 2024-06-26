@@ -4,14 +4,20 @@
     "href": "index.html",
     "title": "The Mini Buoy Handbook",
     "section": "",
-    "text": "Preface\nThe ‘Mini Buoy’ is an applied research tool to measure inundation duration, current velocity, and wave orbital velocity in shallow coastal settings using accelerometer technology. As a low cost and open-source solution, Mini Buoys and the associated App are a useful alternative to conventional hydrodynamic sensors.\nThis guide provides an overview of how the Mini Buoy works, how to configure and deploy them, and how to analyse the data1.\n\n\n\n\n\n\nThis research was funded by the NEWTON Fund project MOMENTS [NE/P014127/1] and UKRI GCRF Living Deltas Hub project [NE/S008926/1]↩︎"
+    "text": "Preface\nThe Mini Buoy is an applied research tool to measure inundation duration, current velocity, and wave orbital velocity in shallow coastal settings using accelerometer technology. As a low-cost and open-source solution, Mini Buoys and the associated App are a useful alternative to conventional hydrodynamic equipment.\nThis handbook provides an overview of how the Mini Buoy works, how to configure and deploy them, and how to analyse the data1.",
+    "crumbs": [
+      "Preface"
+    ]
   },
   {
     "objectID": "index.html#footnotes",
     "href": "index.html#footnotes",
     "title": "The Mini Buoy Handbook",
     "section": "",
-    "text": "This research was funded by the NEWTON Fund project MOMENTS [NE/P014127/1] and UKRI GCRF Living Deltas Hub project [NE/S008926/1]↩︎"
+    "text": "This research was funded by the NEWTON Fund project MOMENTS [NE/P014127/1] and UKRI GCRF Living Deltas Hub project [NE/S008926/1]↩︎",
+    "crumbs": [
+      "Preface"
+    ]
   },
   {
     "objectID": "chapters/export.html#msr145",
