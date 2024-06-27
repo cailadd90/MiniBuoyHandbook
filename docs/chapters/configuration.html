@@ -237,7 +237,7 @@ Note
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="figs/MSRcFormat.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<p><img src="figs/MSRcFormatMemory.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 <ol start="3" type="1">
@@ -262,7 +262,7 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Only <code>Channel 2 | Ay</code> should now display <code>always</code>. This means only acceleration data along the y-axis will be gathered. y-axis acceleration data is used to measure hydrodynamics.</p>
+<p>Only <code>Channel 2 | Ay</code> should now display <code>always</code>. This means only acceleration data along the y-axis will be gathered. Only y-axis acceleration data is used to measure hydrodynamics.</p>
 </div>
 </div>
 <div class="quarto-figure quarto-figure-center">
@@ -272,7 +272,7 @@ Important
 </div>
 <ol start="13" type="1">
 <li>Select the <code>User settings</code> tab</li>
-<li>Under <code>Name of logger</code>, enter a suitable ID for the logger</li>
+<li>Under <code>Info</code>, enter a suitable <code>Name of logger</code></li>
 <li>Click <code>Write</code></li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -337,9 +337,10 @@ Note
 </div>
 </div>
 <ol start="18" type="1">
-<li>Under <code>Record control</code>, set the logger to <code>Start at</code> a specific date and time</li>
+<li>Under <code>Record control</code>, check <code>Start at</code></li>
+<li>Set the logger to <code>Start at</code> a specific date and time</li>
 <li>Check <code>Consider limit</code></li>
-<li>Uncheck all options under <code>Options during record</code></li>
+<li>Under <code>Options during record</code>, uncheck all options</li>
 <li>Click <code>Write basic settings</code></li>
 <li>Click <code>Start</code></li>
 <li>Under <code>Info and measurement parameters</code>, confirm that <code>State</code> reads <code>Record starts on yyyy-mm-dd hh:mm</code></li>
@@ -349,61 +350,151 @@ Note
 <p><img src="figs/MSRcBasicSettings.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
+<ol start="25" type="1">
+<li>Click <code>Exit</code></li>
+<li>Disconnect the MSR145W B4 logger from the computer</li>
+</ol>
 <p>The logger is now primed for data collection.</p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <ol type="1">
 <li>Select the <code>Format memory</code> tab</li>
-<li>Click <code>Format</code>. This will delete any data stored on the logger</li>
+<li>Click <code>Format</code> &gt; <code>Yes</code>. This will delete any data stored on the logger</li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="figs/MSRStep2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<p><img src="figs/MSRbFormatMemory.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 <ol start="3" type="1">
-<li>Once formatting is complete, select the <code>User settings</code> tab</li>
-<li>Set the acceleration sensor measure range to <code>2G</code></li>
-<li>You can define a name for the logger under <code>Name of logger</code></li>
+<li>Once formatting is complete, click <code>OK</code></li>
+<li>Select the <code>User settings</code> tab</li>
+<li>Under <code>Acceleration sensor</code>, set the <code>Measure range</code> to <code>2G</code></li>
+<li>Under <code>Info</code>, enter a suitable <code>Name of logger</code></li>
 <li>Click <code>Write user settings</code></li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="figs/MSRStep3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<p><img src="figs/MSRbUserSettings.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<ol start="7" type="1">
-<li>Under <code>Record control</code>, check the <code>Limits active</code> box</li>
-<li>Select the <code>Limits</code> tab. We can use limits to effectively disable the X and Y sensors by setting unrealistically high acceleration limits. This will allow your logger to store more Y acceleration data.</li>
-<li>For the <strong>ACC x</strong> channel, select <code>&lt;L1 or &gt;L2, (Shock)</code> from the record limit drop-down menu (click on the cell to make the drop-down menu visible)</li>
-<li>For the <strong>ACC z</strong> channel, select <code>&lt;L1 or &gt;L2, (Shock)</code> from the record limit drop-down menu (click on the cell to make the drop-down menu visible)</li>
-<li>Set the corresponding <code>Limit L1</code> to -999 and <code>Limit L2</code> to +999. The MSR software will default to the maximum possible range</li>
-<li>Make sure there are no limits set on the ACC y channel by selecting <code>inactive</code> from the record limit drop-down menu</li>
-<li>Click the <code>&lt;</code> button in the bottom-left of the window</li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/MSRStep4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-<ol start="14" type="1">
+<ol start="8" type="1">
 <li>Select the <code>Basic settings</code> tab</li>
-<li>Under <code>Sensors</code>, select <code>t1</code> from the <code>ACC x, y, z</code> drop-down menu</li>
-<li>Under <code>Main storage rate</code>, set <code>t1=</code> to the desired sampling rate in seconds
-<ul>
-<li>The Mini Buoy has been calibrated to accept sampling rates between 1 and 10 seconds. Refer to the table in <a href="intro.html" class="quarto-xref"><span>Chapter 1</span></a> for sampling duration (this is more accurate than the <code>Prediction</code> tool that underestimates memory capacity as it does not take into account the limit settings).</li>
-</ul></li>
-<li>Check the <code>Start at</code> box, and set the date and time shortly after your planned deployment</li>
-<li>Under <code>Options during record</code>, uncheck all options. This will extend the battery life of the logger</li>
-<li>Click <code>Write basic settings</code> to upload your settings to the logger</li>
-<li>Click <code>Exit</code> and disconnect the MSR145W B4 logger from the computer</li>
-<li>A blue light will begin to flash, confirming the logger is primed and ready to begin logging when the start date and time is reached</li>
+<li>Under <code>Record control</code>, check the <code>Limits active</code> box</li>
+<li>Select the <code>Limits</code> tab</li>
+<li>Under <code>Record limit</code>, use the drop-down menu for <code>ACC x</code> to select <code>&lt;L1 or &gt;L2, (Shock)</code></li>
+<li>Under <code>Limit L1</code>, set the value for <code>ACC x</code> to <code>-123</code> (i.e.&nbsp;negative)</li>
+<li>Under <code>Limit L1</code>, set the value for <code>ACC x</code> to <code>123</code> (i.e.&nbsp;positive)</li>
+<li>Under <code>Record limit</code>, use the drop-down menu for <code>ACC z</code> to select <code>&lt;L1 or &gt;L2, (Shock)</code></li>
+<li>Under <code>Limit L1</code>, set the value for <code>ACC z</code> to <code>-123</code> (i.e.&nbsp;negative)</li>
+<li>Under <code>Limit L1</code>, set the value for <code>ACC z</code> to <code>123</code> (i.e.&nbsp;positive)</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Only <code>ACC y</code> should now display <code>inactive</code>. This means limits on the y-axis logger are inactive, so measurements will always be taken. For the other axes, data is only recorded if extremely high (and unrealistic) acceleration values are detected - effectively disabling them. Only y-axis acceleration data is used to measure hydrodynamics.</p>
+</div>
+</div>
+<ol start="17" type="1">
+<li>Click <code>&lt;</code></li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="figs/MSRStep5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<p><img src="figs/MSRbLimits.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
+<ol start="18" type="1">
+<li><code>Basic settings</code> should now be displayed. If not, select the tab</li>
+<li>Under <code>Sensors</code>, select <code>t1</code> from the <code>ACC x, y, z</code> drop-down menu</li>
+<li>Under <code>Main storage rate</code>, set <code>t1=</code> to a sampling rate between 1 and 10 seconds</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sampling rate determines the precision of the data and the duration of a survey. A higher sampling rate improves precision but lowers survey duration. Use the table below to select an optimum balance between sampling rate and survey duration.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Sampling rate</th>
+<th style="text-align: center;">Survey duration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: center;">24 days</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: center;">48 days</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: center;">72 days</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: center;">96 days</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">5</td>
+<td style="text-align: center;">120 days</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">6</td>
+<td style="text-align: center;">144 days</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">7</td>
+<td style="text-align: center;">168 days</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">8</td>
+<td style="text-align: center;">192 days</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">9</td>
+<td style="text-align: center;">216 days</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">10</td>
+<td style="text-align: center;">240 days</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ol start="22" type="1">
+<li>Under <code>Record control</code>, check <code>Start at</code></li>
+<li>Set the logger to <code>Start at</code> a specific date and time</li>
+<li>Under <code>Options during record</code>, uncheck all options</li>
+<li>Click <code>Write basic settings</code></li>
+<li>Under <code>Info and measurement parameters</code>, confirm that <code>State</code> reads <code>Record starts on yyyy-mm-dd hh:mm</code></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/MSRbBasicSettings.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<ol start="27" type="1">
+<li>Click <code>Exit</code></li>
+<li>Disconnect the MSR145W B4 logger from the computer</li>
+</ol>
+<p>The logger is now primed for data collection. A blue light will flash until the start date and time is reached.</p>
 </div>
 </div>
 </div>
