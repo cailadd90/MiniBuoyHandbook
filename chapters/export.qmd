@@ -1,11 +1,11 @@
 # Export {#sec-export}
 
-After a deployment, the data can be retrieved from the logger and exported as a .csv data table. It is important to save your data in the data format that can be recognised by the Mini Buoy App. Select the correct software tab according to the logger type being configured:
+After a deployment, the data will need to be downloaded from the logger. The following section describes how to export the data into a format that can be recognised by the Mini Buoy App. Select the correct software tab according to the logger type being configured:
 
 ::: panel-tabset
 ##	MSR145
 
-To export acceleration data from the MSR145 B4 logger:
+To export data from the MSR145W B4:
 
 1. Open the MSR software
 2. Double-click `Csv`
@@ -33,7 +33,7 @@ To export acceleration data from the MSR145 B4 logger:
 
 ## HOBOware
 
-To export acceleration data from the Pendant G Data Logger:
+To export data from the Pendant G Data Logger:
 
 1. Open the HOBOware software
 2. Open the preferences window by selecting `HOBOware` and `Preferences...`

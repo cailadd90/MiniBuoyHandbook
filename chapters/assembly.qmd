@@ -1,6 +1,6 @@
 # Assembly
 
-Depending on their requirements, the user has a choice of three Mini Buoy designs for measuring hydrodynamics (see @sec-intro). In the following steps, we provide instructions for the assembly of each design.
+Depending on their requirements, the user has a choice of three Mini Buoy designs for measuring hydrodynamics (see @sec-intro). The following section provides instructions for the assembly of each design.
 
 ::: panel-tabset
 ## B4
@@ -100,7 +100,6 @@ The Pendant[^2] can be directly tethered to a pole in the ground using fishing s
 To assemble the Pendant Mini Buoy, simply attach the fishing swivel to the anchor point on the Pendant logger as shown:
 
 ![](figs/PendantTether.png){fig-align='center' width=70%}
-
 :::
 
 [^1]: The MSR145W B4 is a standalone accelerometer with integrated rechargeable lithium ion battery and memory in a waterproof seal. Acceleration is measured along the y-axis.
