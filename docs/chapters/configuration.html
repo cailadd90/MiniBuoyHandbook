@@ -193,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
 <p>To configure the MSR145W B4:</p>
 <ol type="1">
 <li>Download and install the MSR software onto a Windows PC</li>
-<li>Connect a logger via the cable provided. A yellow LED will light up on the logger, indicating the internal battery is being charged. The light will extinguish once the battery is fully charged</li>
+<li>Connect a logger to the PC via the cable provided. A yellow LED will light up on the logger, indicating the internal battery is being charged. The light will extinguish once the battery is fully charged</li>
 <li>Open the MSR software</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -339,6 +339,21 @@ Note
 <ol start="18" type="1">
 <li>Under <code>Record control</code>, check <code>Start at</code></li>
 <li>Set the logger to <code>Start at</code> a specific date and time</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is good practice to set the start time as two hours before the Mini Buoy is expected to be inundated.</p>
+</div>
+</div>
+<ol start="20" type="1">
 <li>Check <code>Consider limit</code></li>
 <li>Under <code>Options during record</code>, uncheck all options</li>
 <li>Click <code>Write basic settings</code></li>
@@ -371,6 +386,21 @@ Note
 <li>Select the <code>User settings</code> tab</li>
 <li>Under <code>Acceleration sensor</code>, set the <code>Measure range</code> to <code>2G</code></li>
 <li>Under <code>Info</code>, enter a suitable <code>Name of logger</code></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is good practice to keep a record of the logger name and serial number for data analysis.</p>
+</div>
+</div>
+<ol start="7" type="1">
 <li>Click <code>Write user settings</code></li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
@@ -435,43 +465,43 @@ Note
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">1</td>
+<td style="text-align: left;">1 s</td>
 <td style="text-align: center;">24 days</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">2</td>
+<td style="text-align: left;">2 s</td>
 <td style="text-align: center;">48 days</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">3</td>
+<td style="text-align: left;">3 s</td>
 <td style="text-align: center;">72 days</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">4</td>
+<td style="text-align: left;">4 s</td>
 <td style="text-align: center;">96 days</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">5</td>
+<td style="text-align: left;">5 s</td>
 <td style="text-align: center;">120 days</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">6</td>
+<td style="text-align: left;">6 s</td>
 <td style="text-align: center;">144 days</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">7</td>
+<td style="text-align: left;">7 s</td>
 <td style="text-align: center;">168 days</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">8</td>
+<td style="text-align: left;">8 s</td>
 <td style="text-align: center;">192 days</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">9</td>
+<td style="text-align: left;">9 s</td>
 <td style="text-align: center;">216 days</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">10</td>
+<td style="text-align: left;">10 s</td>
 <td style="text-align: center;">240 days</td>
 </tr>
 </tbody>
@@ -481,6 +511,21 @@ Note
 <ol start="22" type="1">
 <li>Under <code>Record control</code>, check <code>Start at</code></li>
 <li>Set the logger to <code>Start at</code> a specific date and time</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is good practice to set the start time as two hours before the Mini Buoy is expected to be inundated.</p>
+</div>
+</div>
+<ol start="24" type="1">
 <li>Under <code>Options during record</code>, uncheck all options</li>
 <li>Click <code>Write basic settings</code></li>
 <li>Under <code>Info and measurement parameters</code>, confirm that <code>State</code> reads <code>Record starts on yyyy-mm-dd hh:mm</code></li>
@@ -500,27 +545,88 @@ Note
 </div>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<p>The Pendant G Data Logger comes with the free <a href="https://www.onsetcomp.com/hoboware-free-download/" target="_blank">HOBOware</a> software to configure the logger. HOBOware is compatible with Windows and macOS operating systems. To configure the HOBO Pendant:</p>
+<p>The free ‘HOBOware’ software to configure the Pendant G Data Logger can be downloaded <a href="https://www.onsetcomp.com/hoboware-free-download/" target="_blank">here</a>. The software is compatible with both Windows and macOS. A HOBO Optic USB Base Station (sold separately) is required to configure and charge the logger.</p>
+<p>To configure the HOBO Pendant:</p>
 <ol type="1">
-<li>Download and install the free <a href="https://www.onsetcomp.com/hoboware-free-download/" target="_blank">HOBOware</a> software</li>
-<li>Connect a logger to a computer via the HOBO Optic USB Base Station</li>
+<li>Download and install the HOBOware software</li>
+<li>Connect a logger to the PC via the HOBO Optic USB Base Station</li>
 <li>Open the HOBOware software</li>
-<li>Click the <code>Select Device</code> drop-down menu <img src="figs/SelectDeviceButton.png" class="img-fluid" style="width:5.0%"> , and tick the USB or serial port tabs in congruence with how you connected the data logger to the computer</li>
-<li>Select the <code>Launch</code> icon <img src="figs/LaunchDeviceBUtton.png" class="img-fluid" style="width:4.0%"> , a window will pop open where you can set a name for the logger under the <code>Name</code> field.</li>
-<li>In the <code>Sensors</code> tab and in the <code>Configure Sensors to Log</code> section, check the <code>X-Axis Acceleration (+/- 3g)</code> box</li>
-<li>From the <code>Deployments</code> tab, set the <code>Logging Interval</code> to the desired sampling rate using the drop-down menu. Increasing the sampling rate will increase the logging duration (calculated based on the logging rate and battery status of the device).
-<ul>
-<li>The Mini Buoy has been calibrated to sampling rates of 1 minute, thus, this is the recommended sampling rate setting, rendering 45 logging days at full battery (refer to the table in <a href="intro.html" class="quarto-xref"><span>Chapter 1</span></a> for other sampling rates that can be used with Hobo pendant G loggers).</li>
-</ul></li>
-<li>In the <code>Deployments</code> tab, set the <code>Start Logging</code> date and time for shortly after your planned deployment<br>
-</li>
-<li>Click <code>Delayed Start</code> and disconnect the Pendant logger from the computer.</li>
+<li>Click the <code>Select Device</code> drop-down menu <img src="figs/SelectDeviceButton.png" class="img-fluid" style="width:5.0%"></li>
+<li>Tick the USB or serial port tabs according to how the data logger was connected to the computer</li>
+<li>Select the <code>Launch</code> icon <img src="figs/LaunchDeviceBUtton.png" class="img-fluid" style="width:4.0%"></li>
+<li>Set a name for the logger under the <code>Name</code> field</li>
+<li>Select the <code>Sensors</code> tab</li>
+<li>Check <code>X-Axis Acceleration (+/- 3g)</code></li>
+<li>Under <code>Configure Sensors to Log</code>, check <code>X-Axis Acceleration (+/- 3g)</code></li>
+<li>Select the <code>Deployments</code> tab</li>
+<li>Use the drop-down menu to set <code>Logging Interval</code> to the desired sampling rate</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sampling rate determines the precision of the data and the duration of a survey. A higher sampling rate improves precision but lowers survey duration. Use the table below to select an optimum balance between sampling rate and survey duration.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Sampling rate</th>
+<th style="text-align: center;">Survey duration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">20 s</td>
+<td style="text-align: center;">15 days</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1 min</td>
+<td style="text-align: center;">45 days</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2 min</td>
+<td style="text-align: center;">90 days</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">10 min</td>
+<td style="text-align: center;">1.2 years</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ol start="7" type="1">
+<li>Select the <code>Deployments</code> tab</li>
+<li>Set the <code>Start Logging</code> date and time</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is good practice to set the start time as two hours before the Mini Buoy is expected to be inundated.</p>
+</div>
+</div>
+<ol start="8" type="1">
+<li>Click <code>Delayed Start</code></li>
+<li>Disconnect the Pendant logger from the computer</li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figs/HOBOStep1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
+<p>The logger is now primed for data collection.</p>
 </div>
 </div>
 </div>

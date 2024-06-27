@@ -10,7 +10,7 @@ The free 'MSR' software to configure the MSR145W B4 logger can be downloaded [he
 To configure the MSR145W B4:
 
 1. Download and install the MSR software onto a Windows PC
-2. Connect a logger via the cable provided. A yellow LED will light up on the logger, indicating the internal battery is being charged. The light will extinguish once the battery is fully charged
+2. Connect a logger to the PC via the cable provided. A yellow LED will light up on the logger, indicating the internal battery is being charged. The light will extinguish once the battery is fully charged
 3. Open the MSR software
 
 ::: {.callout-note}
@@ -80,6 +80,11 @@ Sampling rate determines the precision of the data and the duration of a survey.
 
 18. Under `Record control`, check `Start at`
 19. Set the logger to `Start at` a specific date and time
+
+::: {.callout-tip}
+It is good practice to set the start time as two hours before the Mini Buoy is expected to be inundated.
+:::
+
 20. Check `Consider limit`
 21. Under `Options during record`, uncheck all options 
 22. Click `Write basic settings`
@@ -104,6 +109,11 @@ The logger is now primed for data collection.
 4. Select the `User settings` tab
 5. Under `Acceleration sensor`, set the `Measure range` to `2G`
 6. Under `Info`, enter a suitable `Name of logger`
+
+::: {.callout-tip}
+It is good practice to keep a record of the logger name and serial number for data analysis. 
+:::
+
 7. Click `Write user settings`
 
 ![](figs/MSRbUserSettings.png){fig-align='center' width=70%}
@@ -135,20 +145,25 @@ Sampling rate determines the precision of the data and the duration of a survey.
 
 | Sampling rate | Survey duration |
 |:--------------|:---------------:|
-| 1             | 24 days         |
-| 2             | 48 days         |
-| 3             | 72 days         |
-| 4             | 96 days         |
-| 5             | 120 days        |
-| 6             | 144 days        |
-| 7             | 168 days        |
-| 8             | 192 days        |
-| 9             | 216 days        |
-| 10            | 240 days        | 
+| 1 s           | 24 days         |
+| 2 s           | 48 days         |
+| 3 s           | 72 days         |
+| 4 s           | 96 days         |
+| 5 s           | 120 days        |
+| 6 s           | 144 days        |
+| 7 s           | 168 days        |
+| 8 s           | 192 days        |
+| 9 s           | 216 days        |
+| 10 s          | 240 days        | 
 :::
 
 22. Under `Record control`, check `Start at`
 23. Set the logger to `Start at` a specific date and time
+
+::: {.callout-tip}
+It is good practice to set the start time as two hours before the Mini Buoy is expected to be inundated.
+:::
+
 24. Under `Options during record`, uncheck all options 
 25. Click `Write basic settings`
 26. Under `Info and measurement parameters`, confirm that `State` reads `Record starts on yyyy-mm-dd hh:mm`
@@ -163,19 +178,45 @@ The logger is now primed for data collection. A blue light will flash until the 
 :::
 ## HOBOware
 
-The Pendant G Data Logger comes with the free [HOBOware](https://www.onsetcomp.com/hoboware-free-download/){target='_blank'} software to configure the logger. HOBOware is compatible with Windows and macOS operating systems. To configure the HOBO Pendant:
+The free 'HOBOware' software to configure the Pendant G Data Logger can be downloaded [here](https://www.onsetcomp.com/hoboware-free-download/){target='_blank'}. The software is compatible with both Windows and macOS. A HOBO Optic USB Base Station (sold separately) is required to configure and charge the logger. 
 
-1. Download and install the free [HOBOware](https://www.onsetcomp.com/hoboware-free-download/){target='_blank'} software
-2. Connect a logger to a computer via the HOBO Optic USB Base Station
+To configure the HOBO Pendant:
+
+1. Download and install the HOBOware software
+2. Connect a logger to the PC via the HOBO Optic USB Base Station
 3. Open the HOBOware software
-4. Click the `Select Device` drop-down menu ![](figs/SelectDeviceButton.png){width=5%} , and tick the USB or serial port tabs in congruence with how you connected the data logger to the computer
-5. Select the `Launch` icon ![](figs/LaunchDeviceBUtton.png){width=4%} , a window will pop open where you can set a name for the logger under the `Name` field.
-5. In the `Sensors` tab and in the `Configure Sensors to Log` section, check the `X-Axis Acceleration (+/- 3g)` box
-6. From the `Deployments` tab, set the `Logging Interval` to the desired sampling rate using the drop-down menu. Increasing the sampling rate will increase the logging duration (calculated based on the logging rate and battery status of the device).
-    * The Mini Buoy has been calibrated to sampling rates of 1 minute, thus, this is the recommended sampling rate setting, rendering 45 logging days at full battery (refer to the table in @sec-intro for other sampling rates that can be used with Hobo pendant G loggers).
-7. In the `Deployments` tab, set the `Start Logging` date and time for shortly after your planned deployment  
-8. Click `Delayed Start` and disconnect the Pendant logger from the computer.
+4. Click the `Select Device` drop-down menu ![](figs/SelectDeviceButton.png){width=5%}
+5. Tick the USB or serial port tabs according to how the data logger was connected to the computer
+5. Select the `Launch` icon ![](figs/LaunchDeviceBUtton.png){width=4%}
+6. Set a name for the logger under the `Name` field
+5. Select the `Sensors` tab
+6. Check `X-Axis Acceleration (+/- 3g)`
+7. Under `Configure Sensors to Log`, check `X-Axis Acceleration (+/- 3g)`
+6. Select the `Deployments` tab
+7. Use the drop-down menu to set `Logging Interval` to the desired sampling rate
+
+::: {.callout-note}
+Sampling rate determines the precision of the data and the duration of a survey. A higher sampling rate improves precision but lowers survey duration. Use the table below to select an optimum balance between sampling rate and survey duration.
+
+| Sampling rate | Survey duration |
+|:--------------|:---------------:|
+| 20 s          | 15 days         |
+| 1 min         | 45 days         |
+| 2 min         | 90 days         |
+| 10 min        | 1.2 years       |
+:::
+
+7. Select the `Deployments` tab
+8. Set the `Start Logging` date and time 
+
+::: {.callout-tip}
+It is good practice to set the start time as two hours before the Mini Buoy is expected to be inundated.
+:::
+
+8. Click `Delayed Start` 
+9. Disconnect the Pendant logger from the computer
 
 ![](figs/HOBOStep1.png){fig-align='center' width=70%}
 
+The logger is now primed for data collection.
 :::
