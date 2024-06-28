@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
 # Assembly
 
 Depending on their requirements, the user has a choice of three Mini Buoy designs for measuring hydrodynamics (see @sec-intro). The following section provides instructions for the assembly of each design.
@@ -5,14 +10,14 @@ Depending on their requirements, the user has a choice of three Mini Buoy design
 ::: panel-tabset
 ## B4
 
-The B4 is a transparent and self-standing centrifuge tube with an MSR145W B4[^1] acceleration logger sealed inside. The tube is anchored to the ground by fishing swivels. To build a B4, first gather the following equipment:
+The B4 is a transparent and self-standing centrifuge tube with an MSR145W B4[^1] acceleration logger sealed inside. The tube is anchored to the ground by fishing swivels. To build a B4, gather the following equipment (see @sec-supplyB4):
 
 *	50 mL clear self-standing centrifuge tube 
 *	Label
 *	Floral foam
 *	MSR145W B4 acceleration data logger
 *	Silicone sealant
-*	Drill with a 3.5 mm dowel bit
+*	Drill with a 3.5 mm brad point bit
 *	3 × 5 cm (1.1 g) fishing swivels
 
 To assemble the B4 Mini Buoy:
@@ -29,15 +34,33 @@ To assemble the B4 Mini Buoy:
 
 ![](figs/B4FishingSwivel.png){fig-align='center' width=70%}
 
+### Recommended suppliers{#sec-supplyB4}
+
+| Item                                                                                                                                    | Cost        | Note                                    |
+|:----------------------------------------------------------------------------------------------------------------------------------------|:-----------:|:---------------------------------------:|
+| [MSR145B4 A logger](https://www.jktech.co.uk/msr/msr-145/){target='_blank'}                                                             | £250        | Unit costs decrease with bulk buy       |
+| [Floral foam](https://www.oasisfloral.co.uk/oasis-bio-floral-foam-maxlife-brick-10-01023){target='_blank'}                              | £17.67      |                                         |
+| [Sealant gun](https://uk.rs-online.com/web/p/dispensing-guns/0174791?gb=s){target='_blank'}                                             | £8.16       |                                         |
+| [Silicone sealant](https://uk.rs-online.com/web/p/sealants/0529126?gb=s){target='_blank'}                                               | £7.76       | Any silicone-based sealant is suitable  |
+| [25 x 25 x 0.5 mm tee bars](https://www.metalsupermarkets.co.uk/product/mild-steel-tee-bar-black/){target='_blank'}                     | £4.41       | 3.5 mm hole to be drilled at top        |
+| [3.4 mm cable ties](https://uk.rs-online.com/web/p/cable-ties/5424271?gb=s){target='_blank'}                                            | £8.26       |                                         |
+|                                                                                                                                         |             |                                         |
+| Total cost*                                                                                                                             | **£643.35** |                                         |
+| Unit cost**                                                                                                                             | **£270.00** |                                         |
+
+*Links and prices were correct as of 1st July 2024.
+
+**Excludes equipment that only needs to be purchased once (drill, sandpaper, sealant gun etc.) and accounts for unit costs of multipack items (eye bolts, floral foam blocks, adhesive labels etc.).
+
 ## B4+
 
-The B4+ almost identical in design to the B4, with some modifications: the centrifuge tube is UV-resistant without a skirt, an eye bolt and fishing line rings are fitted to provide more durability, and steel shot is added to the tube to increase sensitivity to current and wave action. Gather the following equipment to assemble the B4+:
+The B4+ almost identical in design to the B4, with some modifications: the centrifuge tube is UV-resistant without a skirt, an eye bolt and fishing line rings are fitted to provide more durability, and steel shot is added to the tube to increase sensitivity to current and wave action. To build a B4+, gather the following equipment (see @sec-supplyB4p):
 
 * 50 mL UV-blocking centrifuge tube
 * Sand paper
-* Drill with a 3.5 mm dowel bit
+* Drill with a 3.5 mm brad point bit
 * M4 Eye bolt and nut
-* Flathead screwdriver
+* flathead screwdriver
 * Epoxy glue
 * 20 g steel shot weight
 * Floral foam
@@ -51,7 +74,7 @@ The B4+ almost identical in design to the B4, with some modifications: the centr
 To assemble the B4+ Mini Buoy:
 
 1. Abrade the bottom of the centrifuge tube (this removes any lubricant on the tube and creates a better surface for the epoxy glue to bond with)
-2. Drill a 3.5 mm hole in the bottom of the centrifuge tube using the dowel bit on a high-speed setting
+2. Drill a 3.5 mm hole in the bottom of the centrifuge tube using the brad point bit on a high-speed setting
 3. Remove any plastic debris that may be blocking the hole on the inside of the centrifuge tube using the flathead screwdriver
 4. Select an eye bolt and nut. Check whether the eye bolt easily threads onto the bolt. If not, discard the bolt
 5. Drop the nut into the centrifuge tube and gently shake the tube until the nut is oriented above the hole
@@ -89,9 +112,40 @@ Cut the floral foam cylinder down the middle
 20.	Apply silicone sealant around the screw thread of the centrifuge tube and fasten the tube cap
 21.	Close the lid of the centrifuge tube, and wipe away any excess silicone to give a clean finish
 
+### Recommended suppliers{#sec-supplyB4p}
+
+| Item                                                                                                                                    | Cost        | Note                                    |
+|:----------------------------------------------------------------------------------------------------------------------------------------|:-----------:|:---------------------------------------:|
+| [MSR145B4 A logger](https://www.jktech.co.uk/msr/msr-145/){target='_blank'}                                                             | £250        | Unit costs decrease with bulk buy       |
+| [50 ml UV centrifuge tubes](https://www.camlab.co.uk/50ml-blackline-centrifuge-tube-pp-pack-of-50){target='_blank'}                     | £52.92      | 50 in a pack, £1.06 per unit            |
+| [Cordless drill](https://uk.rs-online.com/web/p/drills/2163620?gb=s){target='_blank'}                                                   | £107.17     |                                         |
+| [4 mm brad point drill bit](https://www.screwfix.com/p/bosch-brad-point-wood-bit-4mm-x-70mm/40599){target='_blank'}                     | £2.29       | 3.5 mm allows for a tighter fit         |
+| [4 mm flathead screwdriver](https://uk.rs-online.com/web/p/screwdrivers/3231910?gb=s){target='_blank'}                                  | £5.21       |                                         |
+| [M4 Eye bolt](https://www.avonstainlessfasteners.co.uk/misc-stainless/eye-bolt-wire-formed-stainless-steel-a2){target='_blank'}         | £50.45      | 200 in a pack, £0.25 per unit           |
+| [M4 Nut](https://www.avonstainlessfasteners.co.uk/stainless-nuts/all-metal-self-locking-nuts-m3-up-to-m24-din980){target='_blank'}      | £27.20      | 200 in a pack, £0.14 per unit           |
+| [180-220 (fine) grit sandpaper](https://uk.rs-online.com/web/p/sandpaper-sanding-blocks-pads/0152833?gb=s){target='_blank'}             | £28.00      |                                         |
+| [Epoxy glue](https://uk.rs-online.com/web/p/adhesives/0132605?gb=s){target='_blank'}                                                    | £8.54       |                                         |
+| [2.25 mm steel shot weight](https://www.claygame.co.uk/steel-shot-pd6){target='_blank'}                                                 | £19.50      |                                         |
+| [Floral foam](https://www.oasisfloral.co.uk/oasis-bio-floral-foam-maxlife-brick-10-01023){target='_blank'}                              | £17.67      |                                         |
+| [Crimping pliers](https://www.gerrysfishing.com/product/fox-crimp-pliers/){target='_blank'}                                             | £9.99       | Must be compatible with crimp sleeves   |
+| [210 lb fishing line](https://www.gerrysfishing.com/product/afw-surflon-nylon-coated-1x7-stainless-leader/){target='_blank'}            | £10.99      | Line should be >200 lb                  |
+| [1.6 mm crimp sleeves](https://www.gerrysfishing.com/product/westin-single-crimps-0-8mm-20pcs/){target='_blank'}                        | £2.49       | Must be compatible with pliers and line |
+| [Sealant gun](https://uk.rs-online.com/web/p/dispensing-guns/0174791?gb=s){target='_blank'}                                             | £8.16       |                                         |
+| [Silicone sealant](https://uk.rs-online.com/web/p/sealants/0529126?gb=s){target='_blank'}                                               | £7.76       | Any silicone-based sealant is suitable  |
+| [25 x 25 x 0.5 mm tee bars](https://www.metalsupermarkets.co.uk/product/mild-steel-tee-bar-black/){target='_blank'}                     | £4.41       | 3.5 mm hole to be drilled at top        |
+| [3.4 mm cable ties](https://uk.rs-online.com/web/p/cable-ties/5424271?gb=s){target='_blank'}                                            | £8.26       |                                         |
+| [Industrial adhesive labels](https://www.amazon.co.uk/Avery-L4715-20-Extra-Strong-Adhesive-Weatherproof/dp/B00K0IDEO6){target='_blank'} | £22.34      |                                         |
+|                                                                                                                                         |             |                                         |
+| Total cost*                                                                                                                             | **£643.35** |                                         |
+| Unit cost**                                                                                                                             | **£270.00** |                                         |
+
+*Links and prices were correct as of 1st July 2024.
+
+**Excludes equipment that only needs to be purchased once (drill, sandpaper, sealant gun etc.) and accounts for unit costs of multipack items (eye bolts, floral foam blocks, adhesive labels etc.).
+
 ## Pendant
 
-The Pendant[^2] can be directly tethered to a pole in the ground using fishing swivels as the logger itself is buoyant and waterproof. Gather the following equipment:
+The Pendant[^2] can be directly tethered to a pole in the ground using fishing swivels as the logger itself is buoyant and waterproof. To build a Pendant, gather the following equipment (see @sec-supplyPendant):
 
 * HOBO Pendant G acceleration data logger
 * HOBO Optic USB Base Station necessary for connecting the logger to the PC
@@ -100,6 +154,19 @@ The Pendant[^2] can be directly tethered to a pole in the ground using fishing s
 To assemble the Pendant Mini Buoy, simply attach the fishing swivel to the anchor point on the Pendant logger as shown:
 
 ![](figs/PendantTether.png){fig-align='center' width=70%}
+
+### Recommended suppliers{#sec-supplyPendant}
+
+| Item                                                                                                                                    | Cost        | Note                                    |
+|:----------------------------------------------------------------------------------------------------------------------------------------|:-----------:|:---------------------------------------:|
+| [25 x 25 x 0.5 mm tee bars](https://www.metalsupermarkets.co.uk/product/mild-steel-tee-bar-black/){target='_blank'}                     | £4.41       | 3.5 mm hole to be drilled at top        |
+|                                                                                                                                         |             |                                         |
+| Total cost*                                                                                                                             | **£643.35** |                                         |
+| Unit cost**                                                                                                                             | **£270.00** |                                         |
+
+*Links and prices were correct as of 1st July 2024.
+
+**Excludes equipment that only needs to be purchased once (drill, sandpaper, sealant gun etc.) and accounts for unit costs of multipack items (eye bolts, floral foam blocks, adhesive labels etc.).
 :::
 
 [^1]: The MSR145W B4 is a standalone accelerometer with integrated rechargeable lithium ion battery and memory in a waterproof seal. Acceleration is measured along the y-axis.
