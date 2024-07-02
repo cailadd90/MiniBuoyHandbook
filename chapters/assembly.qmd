@@ -36,17 +36,21 @@ To assemble the B4 Mini Buoy:
 
 ### Recommended suppliers{#sec-supplyB4}
 
-| Item                                                                                                                                    | Cost        | Note                                    |
-|:----------------------------------------------------------------------------------------------------------------------------------------|:-----------:|:---------------------------------------:|
-| [MSR145B4 A logger](https://www.jktech.co.uk/msr/msr-145/){target='_blank'}                                                             | £250        | Unit costs decrease with bulk buy       |
-| [Floral foam](https://www.oasisfloral.co.uk/oasis-bio-floral-foam-maxlife-brick-10-01023){target='_blank'}                              | £17.67      |                                         |
-| [Sealant gun](https://uk.rs-online.com/web/p/dispensing-guns/0174791?gb=s){target='_blank'}                                             | £8.16       |                                         |
-| [Silicone sealant](https://uk.rs-online.com/web/p/sealants/0529126?gb=s){target='_blank'}                                               | £7.76       | Any silicone-based sealant is suitable  |
-| [25 x 25 x 0.5 mm tee bars](https://www.metalsupermarkets.co.uk/product/mild-steel-tee-bar-black/){target='_blank'}                     | £4.41       | 3.5 mm hole to be drilled at top        |
-| [3.4 mm cable ties](https://uk.rs-online.com/web/p/cable-ties/5424271?gb=s){target='_blank'}                                            | £8.26       |                                         |
-|                                                                                                                                         |             |                                         |
-| Total cost*                                                                                                                             | **£643.35** |                                         |
-| Unit cost**                                                                                                                             | **£270.00** |                                         |
+| Item                                                                                                                                     | Cost        | Note                                    |
+|:-----------------------------------------------------------------------------------------------------------------------------------------|:-----------:|:---------------------------------------:|
+| [MSR145B4 A logger](https://www.jktech.co.uk/msr/msr-145/){target='_blank'}                                                              | £250        | Unit costs decrease with bulk buy       |
+| [50 ml skirted centrifuge tube](https://www.fishersci.co.uk/shop/products/product/10241460?cid=WEB_EXE_20220906_3IJ1CZ){target='_blank'} | £73.63      | 250 in a pack, £0.29 per unit           |
+| [Floral foam](https://www.oasisfloral.co.uk/oasis-bio-floral-foam-maxlife-brick-10-01023){target='_blank'}                               | £17.67      |                                         |
+| [Cordless drill](https://uk.rs-online.com/web/p/drills/2163620?gb=s){target='_blank'}                                                    | £107.17     |                                         |
+| [2 mm brad point drill bit](https://www.amazon.co.uk/Bosch-Professional-2608595518-Shank-Silver/dp/B000R5I86Q/){target='_blank'}         | £3.09       |                                         |
+| [3 x 55 mm fishing swivel](https://www.ebay.co.uk/itm/254921245050?chn=ps&_ul=GB&mkevt=1&mkcid=28&var=554791054971){target='_blank'}     | £3.29       |                                         |
+| [Sealant gun](https://uk.rs-online.com/web/p/dispensing-guns/0174791?gb=s){target='_blank'}                                              | £8.16       |                                         |
+| [Silicone sealant](https://uk.rs-online.com/web/p/sealants/0529126?gb=s){target='_blank'}                                                | £7.76       | Any silicone-based sealant is suitable  |
+| [25 x 25 x 500 mm tee bars](https://www.metalsupermarkets.co.uk/product/mild-steel-tee-bar-black/){target='_blank'}                      | £4.41       | 3.5 mm hole to be drilled at top        |
+| [3.4 mm cable ties](https://uk.rs-online.com/web/p/cable-ties/5424271?gb=s){target='_blank'}                                             | £8.26       |                                         |
+|                                                                                                                                          |             |                                         |
+| Total cost*                                                                                                                              | **£483.44** |                                         |
+| Unit cost**                                                                                                                              | **£260.00** |                                         |
 
 *Links and prices were correct as of 1st July 2024.
 
@@ -132,7 +136,7 @@ Cut the floral foam cylinder down the middle
 | [1.6 mm crimp sleeves](https://www.gerrysfishing.com/product/westin-single-crimps-0-8mm-20pcs/){target='_blank'}                        | £2.49       | Must be compatible with pliers and line |
 | [Sealant gun](https://uk.rs-online.com/web/p/dispensing-guns/0174791?gb=s){target='_blank'}                                             | £8.16       |                                         |
 | [Silicone sealant](https://uk.rs-online.com/web/p/sealants/0529126?gb=s){target='_blank'}                                               | £7.76       | Any silicone-based sealant is suitable  |
-| [25 x 25 x 0.5 mm tee bars](https://www.metalsupermarkets.co.uk/product/mild-steel-tee-bar-black/){target='_blank'}                     | £4.41       | 3.5 mm hole to be drilled at top        |
+| [25 x 25 x 500 mm tee bars](https://www.metalsupermarkets.co.uk/product/mild-steel-tee-bar-black/){target='_blank'}                     | £4.41       | 3.5 mm hole to be drilled at top        |
 | [3.4 mm cable ties](https://uk.rs-online.com/web/p/cable-ties/5424271?gb=s){target='_blank'}                                            | £8.26       |                                         |
 | [Industrial adhesive labels](https://www.amazon.co.uk/Avery-L4715-20-Extra-Strong-Adhesive-Weatherproof/dp/B00K0IDEO6){target='_blank'} | £22.34      |                                         |
 |                                                                                                                                         |             |                                         |
@@ -141,7 +145,7 @@ Cut the floral foam cylinder down the middle
 
 *Links and prices were correct as of 1st July 2024.
 
-**Excludes equipment that only needs to be purchased once (drill, sandpaper, sealant gun etc.) and accounts for unit costs of multipack items (eye bolts, floral foam blocks, adhesive labels etc.).
+**Excludes equipment that only needs to be purchased once (drill, sealant gun) and accounts for unit costs of multipack items (floral foam blocks, cable ties, adhesive labels etc.).
 
 ## Pendant
 
@@ -159,14 +163,18 @@ To assemble the Pendant Mini Buoy, simply attach the fishing swivel to the ancho
 
 | Item                                                                                                                                    | Cost        | Note                                    |
 |:----------------------------------------------------------------------------------------------------------------------------------------|:-----------:|:---------------------------------------:|
-| [25 x 25 x 0.5 mm tee bars](https://www.metalsupermarkets.co.uk/product/mild-steel-tee-bar-black/){target='_blank'}                     | £4.41       | 3.5 mm hole to be drilled at top        |
+| [HOBO Pendant G Logger](https://www.tempcon.co.uk/hobo-ua-004-64-hobo-pendant-g-logger-uaua-004-64){target='_blank'}                    | £147.49     |                                         |
+| [HOBO Optical Base Station](https://www.tempcon.co.uk/hobo-base-u-4-usb-universal-base-station){target='_blank'}                        | £217.36     |                                         |
+| [25 x 25 x 500 mm tee bars](https://www.metalsupermarkets.co.uk/product/mild-steel-tee-bar-black/){target='_blank'}                     | £4.41       | 3.5 mm hole to be drilled at top        |
+| [3 x 55 mm fishing swivel](https://www.ebay.co.uk/itm/254921245050?chn=ps&_ul=GB&mkevt=1&mkcid=28&var=554791054971){target='_blank'}    | £3.29       |                                         |
+| [3.4 mm cable ties](https://uk.rs-online.com/web/p/cable-ties/5424271?gb=s){target='_blank'}                                            | £8.26       |                                         |
 |                                                                                                                                         |             |                                         |
-| Total cost*                                                                                                                             | **£643.35** |                                         |
-| Unit cost**                                                                                                                             | **£270.00** |                                         |
+| Total cost*                                                                                                                             | **£380.81** |                                         |
+| Unit cost**                                                                                                                             | **£155.00** |                                         |
 
 *Links and prices were correct as of 1st July 2024.
 
-**Excludes equipment that only needs to be purchased once (drill, sandpaper, sealant gun etc.) and accounts for unit costs of multipack items (eye bolts, floral foam blocks, adhesive labels etc.).
+**Excludes equipment that only needs to be purchased once (optical base station) and accounts for unit costs of multipack items (cable ties).
 :::
 
 [^1]: The MSR145W B4 is a standalone accelerometer with integrated rechargeable lithium ion battery and memory in a waterproof seal. Acceleration is measured along the y-axis.
