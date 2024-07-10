@@ -10,7 +10,7 @@ Depending on their requirements, the user has a choice of three Mini Buoy design
 ::: panel-tabset
 ## B4
 
-The B4 is a transparent and self-standing centrifuge tube with an MSR145W B4[^1] acceleration logger sealed inside. The tube is anchored to the ground by fishing swivels. To build a B4, gather the following equipment (see @sec-supplyB4):
+The B4 is a transparent and self-standing centrifuge tube with an MSR145W B4[^1] acceleration logger sealed inside. The tube is anchored to the ground by fishing swivels. To build a B4, gather the following equipment (see @tbl-B4):
 
 *	50 mL clear self-standing centrifuge tube 
 *	Label
@@ -34,7 +34,7 @@ To assemble the B4 Mini Buoy:
 
 ![](figs/B4FishingSwivel.png){fig-align='center' width=70%}
 
-### Recommended suppliers{#sec-supplyB4}
+: Items to assemble the B4 Mini Buoy {#tbl-B4}
 
 | Item                                                                                                                                     | Cost        | Note                                    |
 |:-----------------------------------------------------------------------------------------------------------------------------------------|:-----------:|:---------------------------------------:|
@@ -58,7 +58,7 @@ To assemble the B4 Mini Buoy:
 
 ## B4+
 
-The B4+ almost identical in design to the B4, with some modifications: the centrifuge tube is UV-resistant without a skirt, an eye bolt and fishing line rings are fitted to provide more durability, and steel shot is added to the tube to increase sensitivity to current and wave action. To build a B4+, gather the following equipment (see @sec-supplyB4p):
+The B4+ almost identical in design to the B4, with some modifications: the centrifuge tube is UV-resistant without a skirt, an eye bolt and fishing line rings are fitted to provide more durability, and steel shot is added to the tube to increase sensitivity to current and wave action. To build a B4+, gather the following equipment (see @tbl-B4p):
 
 * 50 mL UV-blocking centrifuge tube
 * Sand paper
@@ -116,7 +116,7 @@ Cut the floral foam cylinder down the middle
 20.	Apply silicone sealant around the screw thread of the centrifuge tube and fasten the tube cap
 21.	Close the lid of the centrifuge tube, and wipe away any excess silicone to give a clean finish
 
-### Recommended suppliers{#sec-supplyB4p}
+: Items to assemble the B4+ Mini Buoy {#tbl-B4p}
 
 | Item                                                                                                                                    | Cost        | Note                                    |
 |:----------------------------------------------------------------------------------------------------------------------------------------|:-----------:|:---------------------------------------:|
@@ -149,7 +149,7 @@ Cut the floral foam cylinder down the middle
 
 ## Pendant
 
-The Pendant[^2] can be directly tethered to a pole in the ground using fishing swivels as the logger itself is buoyant and waterproof. To build a Pendant, gather the following equipment (see @sec-supplyPendant):
+The Pendant[^2] can be directly tethered to a pole in the ground using fishing swivels as the logger itself is buoyant and waterproof. To build a Pendant, gather the following equipment (see @tbl-Pendant):
 
 * HOBO Pendant G acceleration data logger
 * HOBO Optic USB Base Station necessary for connecting the logger to the PC
@@ -159,7 +159,7 @@ To assemble the Pendant Mini Buoy, simply attach the fishing swivel to the ancho
 
 ![](figs/PendantTether.png){fig-align='center' width=70%}
 
-### Recommended suppliers{#sec-supplyPendant}
+: Items to assemble the Pendant Mini Buoy {#tbl-Pendant}
 
 | Item                                                                                                                                    | Cost        | Note                                    |
 |:----------------------------------------------------------------------------------------------------------------------------------------|:-----------:|:---------------------------------------:|
