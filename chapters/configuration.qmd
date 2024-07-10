@@ -122,23 +122,23 @@ It is good practice to keep a record of the logger name and serial number for da
 14. Under `Record control`, check the `Limits active` box
 15. Select the `Limits` tab
 16. Under `Record limit`, use the drop-down menu for `ACC x` to select `<L1 or >L2, (Shock)`
-18. Under `Limit L1`, set the value for `ACC x` to `-123` (i.e. negative)
-19. Under `Limit L1`, set the value for `ACC x` to `123` (i.e. positive)
-20. Under `Record limit`, use the drop-down menu for `ACC z` to select `<L1 or >L2, (Shock)`
-21. Under `Limit L1`, set the value for `ACC z` to `-123` (i.e. negative)
-22. Under `Limit L1`, set the value for `ACC z` to `123` (i.e. positive)
+17. Under `Limit L1`, set the value for `ACC x` to `-123` (i.e. negative)
+18. Under `Limit L1`, set the value for `ACC x` to `123` (i.e. positive)
+19. Under `Record limit`, use the drop-down menu for `ACC z` to select `<L1 or >L2, (Shock)`
+20. Under `Limit L1`, set the value for `ACC z` to `-123` (i.e. negative)
+21. Under `Limit L1`, set the value for `ACC z` to `123` (i.e. positive)
 
 ::: {.callout-important}
 Only `ACC y` should now display `inactive`. This means limits on the y-axis logger are inactive, so measurements will always be taken. For the other axes, data is only recorded if extremely high (and unrealistic) acceleration values are detected - effectively disabling them. Only y-axis acceleration data is used to measure hydrodynamics.
 :::
 
-23. Click `<`
+22. Click `<`
 
 ![](figs/MSRbLimits.png){fig-align='center' width=70%}
 
-24. `Basic settings` should now be displayed. If not, select the tab
-25. Under `Sensors`, select `t1` from the `ACC x, y, z` drop-down menu
-26. Under `Main storage rate`, set `t1=` to a sampling rate between 1 and 10 seconds
+23. `Basic settings` should now be displayed. If not, select the tab
+24. Under `Sensors`, select `t1` from the `ACC x, y, z` drop-down menu
+25. Under `Main storage rate`, set `t1=` to a sampling rate between 1 and 10 seconds
 
 ::: {.callout-note}
 Sampling rate determines the precision of the data and the duration of a survey. A higher sampling rate improves precision but lowers survey duration. Use the table below to select an optimum balance between sampling rate and survey duration.
@@ -157,21 +157,21 @@ Sampling rate determines the precision of the data and the duration of a survey.
 | 10 s          | 240 days        | 
 :::
 
-27. Under `Record control`, check `Start at`
-28. Set the logger to `Start at` a specific date and time
+26. Under `Record control`, check `Start at`
+27. Set the logger to `Start at` a specific date and time
 
 ::: {.callout-tip}
 It is good practice to set the start time as two hours before the Mini Buoy is expected to be inundated.
 :::
 
-29. Under `Options during record`, uncheck all options 
-30. Click `Write basic settings`
-31. Under `Info and measurement parameters`, confirm that `State` reads `Record starts on yyyy-mm-dd hh:mm`
+28. Under `Options during record`, uncheck all options 
+29. Click `Write basic settings`
+30. Under `Info and measurement parameters`, confirm that `State` reads `Record starts on yyyy-mm-dd hh:mm`
 
 ![](figs/MSRbBasicSettings.png){fig-align='center' width=70%}
 
-32. Click `Exit`
-33. Disconnect the MSR145W B4 logger from the computer
+31. Click `Exit`
+32. Disconnect the MSR145W B4 logger from the computer
 
 The logger is now primed for data collection. A blue light will flash until the start date and time is reached.
 
