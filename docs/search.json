@@ -57,8 +57,11 @@
     "objectID": "chapters/intro.html#operating-principles",
     "href": "chapters/intro.html#operating-principles",
     "title": "1  Introduction",
-    "section": "1.1 Operating principles",
-    "text": "1.1 Operating principles\nInundation duration, current velocity, and wave orbital velocity parameters can all be derived from acceleration data.1 For an accelerometer mounted in a tethered float, the change in tilt from 0 to 90° indicates a change in the position of the device from lying horizontally on the tidal flat to floating vertically in the water column as the tide comes in. A return of the tilt to 0° indicates the tide has retreated and the Mini Buoy is once again lying flat. The time when the Mini Buoy deviated from the horizontal position gives the inundation duration of the tide. When the Mini Buoy is fully inundated, any tilting away from the vertical position is caused by a current pushing against the buoy. The stronger the current, the stronger the tilt. When waves pass over the Mini Buoy, they cause it to wobble. Moving standard deviation in the tilt over a sufficient time window captures the average wave orbital velocity near the bed. The greater the standard deviation, the greater the wave orbital velocity.\n\n\n\n\n\nTesting has shown that inundation status is correctly identified at rates of 87-99% across all designs. To identify the inundation status of a Mini Buoy from acceleration data, a classifier algorithm (Quadratic Discriminant Analysis) differentiates inundated and non-inundated cases from the median and interquartile range in acceleration per minute; median and interquartile range values are near zero for a Mini Buoy at rest, and are larger when a Mini Buoy is inundated.\n\n\n\n\n\nPartially inundated cases are then identified using an abrupt shift detection algorithm (Boulton, 2022) that searches for the continuous change in Mini Buoy tilt from 0 to ~90° at the start of the flood tide and ~90 to 0° at the end of the ebb tide, characteristic of partially inundated cases before/after peak flood/ebb currents.\n\n\n\n\n\nConversion from tilt to velocity has been done by deploying each Mini Buoy design adjacent to hydrographic sensors that measure water velocity directly. Current velocities as low as 0.01 m/s and as high as 0.75 m/s can be detected with good accuracy (Figures A-C below). The B4+ is reasonable at measuring wave orbital velocities between 0 and 0.2 m/s (Figure D below)."
+    "section": "",
+    "text": "Balke, Thorsten, Alejandra Vovides, Christian Schwarz, Gail L. Chmura, Cai Ladd, and Mohammad Basyuni. 2021. “Monitoring Tidal Hydrology in Coastal Wetlands with the ‘Mini Buoy’: Applications for Mangrove Restoration.” Hydrology and Earth System Sciences 25 (3): 1229–44. https://doi.org/10.5194/hess-25-1229-2021.\n\n\nLadd, Cai J. T., Alejandra G. Vovides, Marie-Christin Wimmler, Christian Schwarz, and Thorsten Balke. 2024. “Monitoring Tides, Currents, and Waves Along Coastal Habitats Using the Mini Buoy.” Limnology and Oceanography: Methods n/a (n/a): n/a. https://doi.org/10.1002/lom3.10631.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
   },
   {
     "objectID": "chapters/assembly.html#b4",
@@ -120,7 +123,7 @@
     "href": "chapters/intro.html#footnotes",
     "title": "1  Introduction",
     "section": "",
-    "text": "A comprehensive description of the Mini Buoy calibrations is given in Ladd et al. (2023).↩︎",
+    "text": "A comprehensive description of the Mini Buoy calibrations is given in Ladd et al. (2024).↩︎",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
