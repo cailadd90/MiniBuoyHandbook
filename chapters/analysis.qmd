@@ -6,19 +6,7 @@ The Mini Buoy App is an open-source tool for reading and interpreting data gathe
 
 ## Installation
 
-The Mini Buoy App is a Shiny application. The App can either be executed as a standalone App (Windows PC only) or directly through RStudio (all systems).
-
-### Standalone Application
-
-1. Download the App [here.](https://cloudstore.zih.tu-dresden.de/index.php/s/7ES7xq2tzMBfNm5){target='_blank'}
-2. Unzip the folder to a desired location on your system.
-3. Double-click on the `MiniBuoyApp.bat` file to launch the App.
-
-::: {.callout-note}
-The App is currently only compatible with Windows PC. Mac users should run the App directly via RStudio (see below).
-:::
-
-### Running within RStudio
+The Mini Buoy App is a Shiny application accessible directly through RStudio.
 
 1. Install R and RStudio [here.](https://posit.co/download/rstudio-desktop/){target='_blank'}
 2. Launch the App via GitHub, and install the `shiny` package if necessary:
@@ -30,13 +18,9 @@ if(!require('shiny')) install.packages('shiny')
 runGitHub(repo = 'MiniBuoy-App', user = 'Ale0430', launch.browser = T)
 ```
 
-### Source code
-
-Users are also able to download the source code of the app from GitHub repository [here](https://github.com/Ale0430/MiniBuoy-App){target='_blank'}. 
-
 ## Using the App
 
-The Mini Buoy App is optimised to contrast hydrodynamic characterstics of intertidal environments at reference (e.g., estabished mangrove edge) and target (e.g., earmarked for mangrove planting) sites. As well as providing a comparison, hydrodynamic conditions of reference and target sites are reported separately. The App will function if only a single Mini Buoy dataset is used, albeit no comparison will be available. Reference and target sites can be used interchangeably.
+The Mini Buoy App is optimised to contrast hydrodynamic characteristics of intertidal environments at reference (e.g., established mangrove edge) and target (e.g., earmarked for mangrove planting) sites. As well as providing a comparison, hydrodynamic conditions of reference and target sites are reported separately. The App will function if only a single Mini Buoy dataset is used, albeit no comparison will be available. Reference and target sites can be used interchangeably.
 
 This tutorial is based on the default reference and target dataset provided with the App.
 
