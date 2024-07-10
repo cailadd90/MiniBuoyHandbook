@@ -111,10 +111,10 @@ Adding shot reduces the buoyancy of the Mini Buoy, making it less stable in the 
 ![](figs/B4pFishingLineChain.jpg){fig-align='center' width=70%}
 
 18. Roughly cut a 5 cm long cylinder from the floral foam that matches the diameter of the centrifuge tube
-Cut the floral foam cylinder down the middle
-19. Place both halves around a configured MSR145W B4 logger (see @sec-config), then gently push the logger into the centrifuge tube **with the PC connector facing upright** to secure the logger in the tube
-20.	Apply silicone sealant around the screw thread of the centrifuge tube and fasten the tube cap
-21.	Close the lid of the centrifuge tube, and wipe away any excess silicone to give a clean finish
+19. Cut the floral foam cylinder down the middle
+20. Place both halves around a configured MSR145W B4 logger (see @sec-config), then gently push the logger into the centrifuge tube **with the PC connector facing upright** to secure the logger in the tube
+21.	Apply silicone sealant around the screw thread of the centrifuge tube and fasten the tube cap
+22.	Close the lid of the centrifuge tube, and wipe away any excess silicone to give a clean finish
 
 : Items to assemble the B4+ Mini Buoy {#tbl-B4p}
 

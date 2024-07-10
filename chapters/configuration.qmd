@@ -19,11 +19,11 @@ The MSR software appearance differs depending on which model of MSR145W B4 was p
 
 To confirm the model of the logger:
 
-1. Double-click `Setup`
+4. Double-click `Setup`
 
 ![](figs/MSRStep1.png){fig-align='center' width=70%}
  
-2. Under `General`, confirm whether `MSR type` is `MSR145C` or `MSR145B`
+5. Under `General`, confirm whether `MSR type` is `MSR145C` or `MSR145B`
 
 ![](figs/ModelID.png){fig-align='center' width=70%}
 
@@ -32,21 +32,21 @@ Select the correct tab to continue with the setup:
 ::: panel-tabset
 ### MSR145C
 
-1. Select the `Format memory` tab
-2. Click `Format` > `Yes`. This will delete any data stored on the logger
+6. Select the `Format memory` tab
+7. Click `Format` > `Yes`. This will delete any data stored on the logger
 
 ![](figs/MSRcFormatMemory.png){fig-align='center' width=70%}
 
-3. Once formatting is complete, click `OK`
-4. Select the `Limit` tab
-5. Click `Read`
-6. Select `Channel 1 | Ax` and click `Change`
-7. Under the `Record condition` drop-down menu, select `never`
-8. Click `OK`
-9. Select `Channel 3 | Az` and click `Change`
-10. Under the `Record condition` drop-down menu, select `never`
-11. Click `OK`
-12. Click `Write`
+8. Once formatting is complete, click `OK`
+9. Select the `Limit` tab
+10. Click `Read`
+11. Select `Channel 1 | Ax` and click `Change`
+12. Under the `Record condition` drop-down menu, select `never`
+13. Click `OK`
+14. Select `Channel 3 | Az` and click `Change`
+15. Under the `Record condition` drop-down menu, select `never`
+16. Click `OK`
+17. Click `Write`
 
 ::: {.callout-important}
 Only `Channel 2 | Ay` should now display `always`. This means only acceleration data along the y-axis will be gathered. Only y-axis acceleration data is used to measure hydrodynamics.
@@ -54,9 +54,9 @@ Only `Channel 2 | Ay` should now display `always`. This means only acceleration 
 
 ![](figs/MSRcLimit.png){fig-align='center' width=70%}
 
-13. Select the `User settings` tab
-14. Under `Info`, enter a suitable `Name of logger`
-15. Click `Write`
+18. Select the `User settings` tab
+19. Under `Info`, enter a suitable `Name of logger`
+20. Click `Write`
 
 ::: {.callout-tip}
 It is good practice to keep a record of the logger name and serial number for data analysis. 
@@ -64,8 +64,8 @@ It is good practice to keep a record of the logger name and serial number for da
 
 ![](figs/MSRcUserSettings.png){fig-align='center' width=70%}
 
-16. Select the `Basic settings` tab
-17. Under `Sensors`, use the drop-down menu to select a sampling rate between `1s` and `10s`
+21. Select the `Basic settings` tab
+22. Under `Sensors`, use the drop-down menu to select a sampling rate between `1s` and `10s`
 
 ::: {.callout-note}
 Sampling rate determines the precision of the data and the duration of a survey. A higher sampling rate improves precision but lowers survey duration. Use the table below to select an optimum balance between sampling rate and survey duration.
@@ -78,67 +78,67 @@ Sampling rate determines the precision of the data and the duration of a survey.
 | 10s           | 240 days        | 
 :::
 
-18. Under `Record control`, check `Start at`
-19. Set the logger to `Start at` a specific date and time
+23. Under `Record control`, check `Start at`
+24. Set the logger to `Start at` a specific date and time
 
 ::: {.callout-tip}
 It is good practice to set the start time as two hours before the Mini Buoy is expected to be inundated.
 :::
 
-20. Check `Consider limit`
-21. Under `Options during record`, uncheck all options 
-22. Click `Write basic settings`
-23. Click `Start`
-24. Under `Info and measurement parameters`, confirm that `State` reads `Record starts on yyyy-mm-dd hh:mm`
+25. Check `Consider limit`
+26. Under `Options during record`, uncheck all options 
+27. Click `Write basic settings`
+28. Click `Start`
+29. Under `Info and measurement parameters`, confirm that `State` reads `Record starts on yyyy-mm-dd hh:mm`
 
 ![](figs/MSRcBasicSettings.png){fig-align='center' width=70%}
 
-25. Click `Exit`
-26. Disconnect the MSR145W B4 logger from the computer
+30. Click `Exit`
+31. Disconnect the MSR145W B4 logger from the computer
 
 The logger is now primed for data collection.
 
 ### MSR145B
 
-1. Select the `Format memory` tab
-2. Click `Format` > `Yes`. This will delete any data stored on the logger
+6. Select the `Format memory` tab
+7. Click `Format` > `Yes`. This will delete any data stored on the logger
 
 ![](figs/MSRbFormatMemory.png){fig-align='center' width=70%}
 
-3. Once formatting is complete, click `OK`
-4. Select the `User settings` tab
-5. Under `Acceleration sensor`, set the `Measure range` to `2G`
-6. Under `Info`, enter a suitable `Name of logger`
+8. Once formatting is complete, click `OK`
+9. Select the `User settings` tab
+10. Under `Acceleration sensor`, set the `Measure range` to `2G`
+11. Under `Info`, enter a suitable `Name of logger`
 
 ::: {.callout-tip}
 It is good practice to keep a record of the logger name and serial number for data analysis. 
 :::
 
-7. Click `Write user settings`
+12. Click `Write user settings`
 
 ![](figs/MSRbUserSettings.png){fig-align='center' width=70%}
 
-8. Select the `Basic settings` tab
-9. Under `Record control`, check the `Limits active` box
-10. Select the `Limits` tab
-11. Under `Record limit`, use the drop-down menu for `ACC x` to select `<L1 or >L2, (Shock)`
-12. Under `Limit L1`, set the value for `ACC x` to `-123` (i.e. negative)
-13. Under `Limit L1`, set the value for `ACC x` to `123` (i.e. positive)
-14. Under `Record limit`, use the drop-down menu for `ACC z` to select `<L1 or >L2, (Shock)`
-15. Under `Limit L1`, set the value for `ACC z` to `-123` (i.e. negative)
-16. Under `Limit L1`, set the value for `ACC z` to `123` (i.e. positive)
+13. Select the `Basic settings` tab
+14. Under `Record control`, check the `Limits active` box
+15. Select the `Limits` tab
+16. Under `Record limit`, use the drop-down menu for `ACC x` to select `<L1 or >L2, (Shock)`
+18. Under `Limit L1`, set the value for `ACC x` to `-123` (i.e. negative)
+19. Under `Limit L1`, set the value for `ACC x` to `123` (i.e. positive)
+20. Under `Record limit`, use the drop-down menu for `ACC z` to select `<L1 or >L2, (Shock)`
+21. Under `Limit L1`, set the value for `ACC z` to `-123` (i.e. negative)
+22. Under `Limit L1`, set the value for `ACC z` to `123` (i.e. positive)
 
 ::: {.callout-important}
 Only `ACC y` should now display `inactive`. This means limits on the y-axis logger are inactive, so measurements will always be taken. For the other axes, data is only recorded if extremely high (and unrealistic) acceleration values are detected - effectively disabling them. Only y-axis acceleration data is used to measure hydrodynamics.
 :::
 
-17. Click `<`
+23. Click `<`
 
 ![](figs/MSRbLimits.png){fig-align='center' width=70%}
 
-18. `Basic settings` should now be displayed. If not, select the tab
-20. Under `Sensors`, select `t1` from the `ACC x, y, z` drop-down menu
-21. Under `Main storage rate`, set `t1=` to a sampling rate between 1 and 10 seconds
+24. `Basic settings` should now be displayed. If not, select the tab
+25. Under `Sensors`, select `t1` from the `ACC x, y, z` drop-down menu
+26. Under `Main storage rate`, set `t1=` to a sampling rate between 1 and 10 seconds
 
 ::: {.callout-note}
 Sampling rate determines the precision of the data and the duration of a survey. A higher sampling rate improves precision but lowers survey duration. Use the table below to select an optimum balance between sampling rate and survey duration.
@@ -157,21 +157,21 @@ Sampling rate determines the precision of the data and the duration of a survey.
 | 10 s          | 240 days        | 
 :::
 
-22. Under `Record control`, check `Start at`
-23. Set the logger to `Start at` a specific date and time
+27. Under `Record control`, check `Start at`
+28. Set the logger to `Start at` a specific date and time
 
 ::: {.callout-tip}
 It is good practice to set the start time as two hours before the Mini Buoy is expected to be inundated.
 :::
 
-24. Under `Options during record`, uncheck all options 
-25. Click `Write basic settings`
-26. Under `Info and measurement parameters`, confirm that `State` reads `Record starts on yyyy-mm-dd hh:mm`
+29. Under `Options during record`, uncheck all options 
+30. Click `Write basic settings`
+31. Under `Info and measurement parameters`, confirm that `State` reads `Record starts on yyyy-mm-dd hh:mm`
 
 ![](figs/MSRbBasicSettings.png){fig-align='center' width=70%}
 
-27. Click `Exit`
-28. Disconnect the MSR145W B4 logger from the computer
+32. Click `Exit`
+33. Disconnect the MSR145W B4 logger from the computer
 
 The logger is now primed for data collection. A blue light will flash until the start date and time is reached.
 
@@ -187,13 +187,13 @@ To configure the HOBO Pendant:
 3. Open the HOBOware software
 4. Click the `Select Device` drop-down menu ![](figs/SelectDeviceButton.png){width=5%}
 5. Tick the USB or serial port tabs according to how the data logger was connected to the computer
-5. Select the `Launch` icon ![](figs/LaunchDeviceBUtton.png){width=4%}
-6. Set a name for the logger under the `Name` field
-5. Select the `Sensors` tab
-6. Check `X-Axis Acceleration (+/- 3g)`
-7. Under `Configure Sensors to Log`, check `X-Axis Acceleration (+/- 3g)`
-6. Select the `Deployments` tab
-7. Use the drop-down menu to set `Logging Interval` to the desired sampling rate
+6. Select the `Launch` icon ![](figs/LaunchDeviceBUtton.png){width=4%}
+7. Set a name for the logger under the `Name` field
+8. Select the `Sensors` tab
+9. Check `X-Axis Acceleration (+/- 3g)`
+10. Under `Configure Sensors to Log`, check `X-Axis Acceleration (+/- 3g)`
+11. Select the `Deployments` tab
+12. Use the drop-down menu to set `Logging Interval` to the desired sampling rate
 
 ::: {.callout-note}
 Sampling rate determines the precision of the data and the duration of a survey. A higher sampling rate improves precision but lowers survey duration. Use the table below to select an optimum balance between sampling rate and survey duration.
@@ -206,15 +206,15 @@ Sampling rate determines the precision of the data and the duration of a survey.
 | 10 min        | 1.2 years       |
 :::
 
-7. Select the `Deployments` tab
-8. Set the `Start Logging` date and time 
+13. Select the `Deployments` tab
+14. Set the `Start Logging` date and time 
 
 ::: {.callout-tip}
 It is good practice to set the start time as two hours before the Mini Buoy is expected to be inundated.
 :::
 
-8. Click `Delayed Start` 
-9. Disconnect the Pendant logger from the computer
+15. Click `Delayed Start` 
+16. Disconnect the Pendant logger from the computer
 
 ![](figs/HOBOStep1.png){fig-align='center' width=70%}
 
