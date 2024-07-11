@@ -12,24 +12,52 @@ To export data from the MSR145W B4:
 
 ![](figs/MSRExportStep1.png){fig-align='center' width=70%}
 
-3. Choose the settings according to the template below and click `Save` and `Exit`. This step only needs to be done once if exporting data from several loggers in a session
+3. Set `Column separator` to `,`
+4. Set `Decimal separator` to `.`
+5. Set `Number format` to `0.000`
+6. Set `Missing number` to `empty`
+7. Set `Column for date/time` to `1 column date/time without ms`
+8. Set `Date format` to `System setting (yyyy-MM-dd)`
+9. Set `Time format` to `System setting (HH:mm:ss)`
+10. Set `File extension` to `csv`
+11. Click `Save` 
+12. Click `Exit`
+
+::: {.callout-note}
+Configuring the `Csv` settings only needs to be done once.
+:::
 
 ![](figs/MSRExportStep2.png){fig-align='center' width=70%}
 
-4. Connect your data logger with the USB cable 
-5. Open the MSR software and double-click `Reader`. Click `OK` to select a specific data file if prompted
-    * The data will be saved onto the computer as an .msr file unique to the software
+13. Connect your data logger with the USB cable 
+14. Double-click `Reader`
 
 ![](figs/MSRExportStep3.png){fig-align='center' width=70%}
 
-6. The MSR software should automatically open the .msr file in order to view the data. If nothing happens, double-click `Viewer` and select `File`, `Open`, and select the .msr file
-7. The data should look similar to the graph below, with low tide recorded as 0 and high tide recorded around -1. Any data at the start and end of the deployment which is not part of the desired measurement period can be removed by using the cross arrows button and selecting the period of interest. The graph should always start and end with a period of low tide (i.e. 0 y acceleration)
+::: {.callout-warning}
+If the logger is still gathering data, a `Record is active!` window will appear. The logger needs to stop logging before data can be retrieved. To terminate the record, click `Yes`. 
+:::
 
 ![](figs/MSRExportStep4.png){fig-align='center' width=70%}
 
-8. Select `File`, `Export time window as text…`, and select an appropriate folder to save the data as a .csv file
+15. Click `OK` to select the data record
 
 ![](figs/MSRExportStep5.png){fig-align='center' width=70%}
+
+::: {.callout-note}
+The MSR software should automatically open an .msr file to view the data. If nothing happens, double-click `Viewer` and select `File`, `Open`, and select the .msr file.
+
+The data should look similar to the graph below, with low tide recorded as 0 and high tide recorded around -1. Any data at the start and end of the deployment which is not part of the desired measurement period can be removed by using the cross arrows button and selecting the period of interest. The graph should always start and end with a period of low tide (i.e. 0 y acceleration).
+:::
+
+![](figs/MSRExportStep6.png){fig-align='center' width=70%}
+
+16. Select `File` > `Export time window as text…`
+17. Select an appropriate folder to save the data as a .csv file
+
+![](figs/MSRExportStep7.png){fig-align='center' width=70%}
+
+The data has now been exported. Quit MSR and disconnect the logger.
 
 ## HOBOware
 

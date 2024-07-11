@@ -200,42 +200,99 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <ol start="3" type="1">
-<li>Choose the settings according to the template below and click <code>Save</code> and <code>Exit</code>. This step only needs to be done once if exporting data from several loggers in a session</li>
+<li>Set <code>Column separator</code> to <code>,</code></li>
+<li>Set <code>Decimal separator</code> to <code>.</code></li>
+<li>Set <code>Number format</code> to <code>0.000</code></li>
+<li>Set <code>Missing number</code> to <code>empty</code></li>
+<li>Set <code>Column for date/time</code> to <code>1 column date/time without ms</code></li>
+<li>Set <code>Date format</code> to <code>System setting (yyyy-MM-dd)</code></li>
+<li>Set <code>Time format</code> to <code>System setting (HH:mm:ss)</code></li>
+<li>Set <code>File extension</code> to <code>csv</code></li>
+<li>Click <code>Save</code></li>
+<li>Click <code>Exit</code></li>
 </ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Configuring the <code>Csv</code> settings only needs to be done once.</p>
+</div>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figs/MSRExportStep2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<ol start="4" type="1">
+<ol start="13" type="1">
 <li>Connect your data logger with the USB cable</li>
-<li>Open the MSR software and double-click <code>Reader</code>. Click <code>OK</code> to select a specific data file if prompted
-<ul>
-<li>The data will be saved onto the computer as an .msr file unique to the software</li>
-</ul></li>
+<li>Double-click <code>Reader</code></li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figs/MSRExportStep3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<ol start="6" type="1">
-<li>The MSR software should automatically open the .msr file in order to view the data. If nothing happens, double-click <code>Viewer</code> and select <code>File</code>, <code>Open</code>, and select the .msr file</li>
-<li>The data should look similar to the graph below, with low tide recorded as 0 and high tide recorded around -1. Any data at the start and end of the deployment which is not part of the desired measurement period can be removed by using the cross arrows button and selecting the period of interest. The graph should always start and end with a period of low tide (i.e.&nbsp;0 y acceleration)</li>
-</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If the logger is still gathering data, a <code>Record is active!</code> window will appear. The logger needs to stop logging before data can be retrieved. To terminate the record, click <code>Yes</code>.</p>
+</div>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figs/MSRExportStep4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
-<ol start="8" type="1">
-<li>Select <code>File</code>, <code>Export time window as text…</code>, and select an appropriate folder to save the data as a .csv file</li>
+<ol start="15" type="1">
+<li>Click <code>OK</code> to select the data record</li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figs/MSRExportStep5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The MSR software should automatically open an .msr file to view the data. If nothing happens, double-click <code>Viewer</code> and select <code>File</code>, <code>Open</code>, and select the .msr file.</p>
+<p>The data should look similar to the graph below, with low tide recorded as 0 and high tide recorded around -1. Any data at the start and end of the deployment which is not part of the desired measurement period can be removed by using the cross arrows button and selecting the period of interest. The graph should always start and end with a period of low tide (i.e.&nbsp;0 y acceleration).</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/MSRExportStep6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<ol start="16" type="1">
+<li>Select <code>File</code> &gt; <code>Export time window as text…</code></li>
+<li>Select an appropriate folder to save the data as a .csv file</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/MSRExportStep7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<p>The data has now been exported. Quit MSR and disconnect the logger.</p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>To export data from the Pendant G Data Logger:</p>
