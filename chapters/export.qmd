@@ -43,14 +43,15 @@ If the logger is still gathering data, a `Record is active!` window will appear.
 15. Click `OK` to select the data record
 
 ![](figs/MSRExportStep5.png){fig-align='center' width=70%}
-
 ::: {.callout-note}
-The MSR software should automatically open an .msr file to view the data. If nothing happens, double-click `Viewer` and select `File`, `Open`, and select the .msr file.
-
-The data should look similar to the graph below, with low tide recorded as 0 and high tide recorded around -1. Any data at the start and end of the deployment which is not part of the desired measurement period can be removed by using the cross arrows button and selecting the period of interest. The graph should always start and end with a period of low tide (i.e. 0 y acceleration).
+The MSR software will first create an `.msr` file in which the data is stored, then automatically load the data in the `Viewer` window. The data should look similar to the graph below, with low tide recorded as 0 and high tide recorded around -1.
 :::
 
 ![](figs/MSRExportStep6.png){fig-align='center' width=70%}
+
+::: {.callout-tip}
+There may be spurious data at the start and end of a survey (e.g. when the Mini Buoy was logging whilst in transit). To remove this, use left click to drag a box over the usable data. To reset the window, click the `Auto scale` icon (![](figs/AutoScale.png){width=4%})
+:::
 
 16. Select `File` > `Export time window as text…`
 17. Select an appropriate folder to save the data as a .csv file
