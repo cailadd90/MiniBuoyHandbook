@@ -1,4 +1,8 @@
 
+---
+toc: false
+---
+
 # FAQs {.unnumbered}
 
 - [Is data lost when a Mini Buoy runs out of battery?](#is-data-lost-when-a-mini-buoy-runs-out-of-battery)
