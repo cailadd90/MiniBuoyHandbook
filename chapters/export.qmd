@@ -3,7 +3,7 @@
 After a deployment, the data will need to be downloaded from the logger. The following section describes how to export the data into a format that can be recognised by the Mini Buoy App. Select the correct software tab according to the logger type being configured:
 
 ::: panel-tabset
-##	MSR145
+##	MSR
 
 To export data from the MSR145W B4:
 
@@ -43,6 +43,7 @@ If the logger is still gathering data, a `Record is active!` window will appear.
 15. Click `OK` to select the data record
 
 ![](figs/MSRExportStep5.png){fig-align='center' width=70%}
+
 ::: {.callout-note}
 The MSR software will first create an `.msr` file in which the data is stored, then automatically load the data in the `Viewer` window. The data should look similar to the graph below, with low tide recorded as 0 and high tide recorded around -1.
 :::
@@ -50,7 +51,7 @@ The MSR software will first create an `.msr` file in which the data is stored, t
 ![](figs/MSRExportStep6.png){fig-align='center' width=70%}
 
 ::: {.callout-tip}
-There may be spurious data at the start and end of a survey (e.g. when the Mini Buoy was logging whilst in transit). To remove this, use left click to drag a box over the usable data. To reset the window, click the `Auto scale` icon (![](figs/AutoScale.png){width=4%})
+There may be spurious data at the start and end of a survey (e.g. when the Mini Buoy was logging whilst in transit). To remove this, use left click to drag a box over the usable data. To reset the window, click the `Auto scale` icon ![](figs/AutoScale.png){width=4%}.
 :::
 
 16. Select `File` > `Export time window as text…`

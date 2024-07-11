@@ -54,7 +54,7 @@ Please ensure the data has been exported from the Mini Buoy in the correct forma
 
 ![](figs/DataUpload.png){fig-align='center' width=100%}
 
-### Filter data (optional)
+### Filter data (optional) {#sec-filter}
 
 Users may wish to 'clean' the data before analysis to remove any spurious data (e.g., acceleration values for when the Mini Buoy was in transit to/from the deployment site). This can be done by filtering usable data between two datetimes. The raw data can also be plotted to aid in selecting appropriate start/end times.
 

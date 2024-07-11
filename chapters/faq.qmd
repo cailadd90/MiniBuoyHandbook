@@ -1,13 +1,27 @@
 
-# FAQs
+# FAQs {.unnumbered}
 
-- [Is data lost if the logger runs out of battery?](#q1)
-- [How do I install Quarto?](#how-do-i-install-quarto)
+- [Is data lost when a Mini Buoy runs out of battery?](#is-data-lost-when-a-mini-buoy-runs-out-of-battery)
+- [Do I need to remove erroneous acceleration data?](#do-i-need-to-remove-erroneous-acceleration-data)
+- [How do I fix the `No hardware found!` error when trying to read an MSR145 logger?](#how-do-i-fix-the-no-hardware-found-error-when-trying-to-read-an-msr145-logger)
+- [How do I turn off the MSR145?](#how-do-i-turn-off-the-msr145)
+- [How do I charge the MSR145?](#how-do-i-charge-the-msr145)
+- [Does the MSR145 need to be fully charged before being stored?](#does-the-msr145-need-to-be-fully-charged-before-being-stored)
 
-### Is data lost if the logger runs out of battery?
+### Is data lost when a Mini Buoy runs out of battery?
 No. The data will be preserved even if a Mini Buoy runs out of battery.
 
-### Do I need to remove irrelevant data on the MSR software?
-You can do this either when exporting data in the MSR software (see ) or 
+### Do I need to remove erroneous acceleration data?
+Removing erroneous data is important for correctly processing acceleration data. You can do this either in the MSR software (see @sec-export) or the Mini Buoy App (see @sec-filter).
 
-can select usable data by dragging and dropping a window around the data using left-click. Otherwise data filtering can be done in the Mini Buoy App.
+### How do I fix the `No hardware found!` error when trying to read an MSR145 logger?
+Check that the USB cable is firmly connected to the MSR145 logger and PC. Restart the MSR software. This should fix the problem.
+
+### How do I turn off the MSR145?
+Unless the MSR145 has been configured to be turned off using the button on the side of a logger, the MSR145 is turned off either when reading the data using the MSR software (a prompt will ask if you want to terminate the record, see @sec-export) or until the battery runs out.
+
+### How do I charge the MSR145?
+The MSR145 is charged when connected to a PC. A steady yellow light indicates the logger is charging. A flashing yellow light, or no light indicates the logger is fully charged.
+
+### Does the MSR145 need to be fully charged before being stored?
+Yes. The MSR145 should be fully charged after 3 hours.
