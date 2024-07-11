@@ -58,7 +58,7 @@
     "href": "chapters/intro.html#operating-principles",
     "title": "1  Introduction",
     "section": "",
-    "text": "Balke T., Schwarz C., Vovides G. 2021. “Monitoring Tidal Hydrology in Coastal Wetlands with the ‘Mini Buoy’: Applications for Mangrove Restoration.” Hydrology and Earth System Sciences 25 (3): 1229–44. https://doi.org/10.5194/hess-25-1229-2021.\n\n\nLadd, Vovides, C. J. T. 2024. “Monitoring Tides, Currents, and Waves Along Coastal Habitats Using the Mini Buoy.” Limnology and Oceanography: Methods. https://doi.org/10.1002/lom3.10631.",
+    "text": "Balke, T., Vovides G., Schwarz C., G. L. Chmura, C. J. T. Ladd, and M. Basyuni. 2021. “Monitoring Tidal Hydrology in Coastal Wetlands with the ‘Mini Buoy’: Applications for Mangrove Restoration.” Hydrology and Earth System Sciences 25 (3): 1229–44. https://doi.org/10.5194/hess-25-1229-2021.\n\n\nLadd, C. J. T., G. Vovides, M.-C. Wimmler, C. Schwarz, and T. Balke. 2024. “Monitoring Tides, Currents, and Waves Along Coastal Habitats Using the Mini Buoy.” Limnology and Oceanography: Methods. https://doi.org/10.1002/lom3.10631.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -123,7 +123,7 @@
     "href": "chapters/intro.html#footnotes",
     "title": "1  Introduction",
     "section": "",
-    "text": "A comprehensive description of the Mini Buoy calibrations is given in Ladd (2024).↩︎",
+    "text": "A comprehensive description of the Mini Buoy calibrations is given in Ladd et al. (2024).↩︎",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -186,6 +186,36 @@
     "text": "Balke, T., Vovides G., Schwarz C., G. L. Chmura, C. J. T. Ladd, and M.\nBasyuni. 2021. “Monitoring Tidal Hydrology in Coastal Wetlands\nwith the ‘Mini Buoy’: Applications for\nMangrove Restoration.” Hydrology and Earth System\nSciences 25 (3): 1229–44. https://doi.org/10.5194/hess-25-1229-2021.\n\n\nLadd, C. J. T., G. Vovides, M.-C. Wimmler, C. Schwarz, and T. Balke.\n2024. “Monitoring Tides, Currents, and Waves Along Coastal\nHabitats Using the Mini Buoy.” Limnology and\nOceanography: Methods. https://doi.org/10.1002/lom3.10631.",
     "crumbs": [
       "References"
+    ]
+  },
+  {
+    "objectID": "chapters/faq.html",
+    "href": "chapters/faq.html",
+    "title": "7  FAQs",
+    "section": "",
+    "text": "7.0.1 Frequently Asked Questions\n\n\nIs data lost if the logger runs out of battery?\nHow do I install Quarto?\n\n\n\n7.0.2 Is data lost if the logger runs out of battery?\nNo. The Mini Buoy will stop collecting data, however stored data remains intact.\n\n\n7.0.3 How do I install Quarto?\nVisit the Get Started page for installation instructions…",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>FAQs</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/faq.html#sec-q2",
+    "href": "chapters/faq.html#sec-q2",
+    "title": "7  FAQ",
+    "section": "7.2 This is the question 2",
+    "text": "7.2 This is the question 2\nThis is the answer",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>FAQ</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/faq.html#on-this-page",
+    "href": "chapters/faq.html#on-this-page",
+    "title": "7  FAQ",
+    "section": "8.1 On this page",
+    "text": "8.1 On this page\n\nWhat can I use Quarto for?\nHow do I install Quarto?\n…\n\n\n8.1.1 What can I use Quarto for?\nQuarto® is an open-source publishing system built on Pandoc…\n\n\n8.1.2 How do I install Quarto?\nVisit the Get Started page for installation instructions…",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>FAQ</span>"
     ]
   }
 ]

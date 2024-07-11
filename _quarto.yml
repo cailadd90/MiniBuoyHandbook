@@ -21,6 +21,7 @@ book:
     - chapters/deployment.qmd
     - chapters/export.qmd
     - chapters/analysis.qmd
+    - chapters/faq.qmd
     - references.qmd
   cover-image: Cover.png
 

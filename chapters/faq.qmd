@@ -1,0 +1,13 @@
+
+# FAQs
+
+- [Is data lost if the logger runs out of battery?](#q1)
+- [How do I install Quarto?](#how-do-i-install-quarto)
+
+### Is data lost if the logger runs out of battery?
+No. The data will be preserved even if a Mini Buoy runs out of battery.
+
+### Do I need to remove irrelevant data on the MSR software?
+You can do this either when exporting data in the MSR software (see ) or 
+
+can select usable data by dragging and dropping a window around the data using left-click. Otherwise data filtering can be done in the Mini Buoy App.
