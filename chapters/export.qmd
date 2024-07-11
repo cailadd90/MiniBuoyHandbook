@@ -38,7 +38,7 @@ Configuring the `Csv` settings only needs to be done once.
 If the logger is still gathering data, a `Record is active!` window will appear. The logger needs to stop logging before data can be retrieved. To terminate the record, click `Yes`. 
 :::
 
-![](figs/MSRExportStep4.png){fig-align='center' width=70%}
+![](figs/MSRExportStep4.png){fig-align='center' width=40%}
 
 15. Click `OK` to select the data record
 
@@ -55,7 +55,7 @@ The data should look similar to the graph below, with low tide recorded as 0 and
 16. Select `File` > `Export time window as text…`
 17. Select an appropriate folder to save the data as a .csv file
 
-![](figs/MSRExportStep7.png){fig-align='center' width=70%}
+![](figs/MSRExportStep7.png){fig-align='center' width=40%}
 
 The data has now been exported. Quit MSR and disconnect the logger.
 
