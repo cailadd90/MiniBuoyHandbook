@@ -68,13 +68,13 @@ To export data from the Pendant G Data Logger:
 1. Open the HOBOware software
 2. For Mac OS, Open the preferences window by selecting `HOBOware` and then `Settings...`. On Windows, after opening the Hobo software, select `File` and  then `Preferences...`.
 
-![](figs/HOBOExportStep1.png){fig-align='center' width=70%}
+![](figs/HOBOExportStep1.png){fig-align='center' width=90%}
 
 3. Select `General`, `Export Settings`, and ensure that `Separate date and time into two columns` is unchecked and set `Time format` to `24-Hour`.
 4. Press `OK`.
 
 
-![](figs/HOBOExportStep2.png){fig-align='center' width=70%}
+![](figs/HOBOExportStep2.png){fig-align='center' width=90%}
 
 5. Select `Plot Setup`
 6. Check the `X Accel` box
