@@ -70,7 +70,7 @@ To export data from the Pendant G Data Logger:
 
 ![](figs/HOBOExportStep1.png){fig-align='center' width=70%}
 
-3. Select `General`, `Export Settings`, and ensure that `Separate date and time into two columns` is unchecked
+3. Select `General`, `Export Settings`, and ensure that `Separate date and time into two columns` is unchecked and set `Time format` to `24-Hour`
 4. Press `OK`
 
 ![](figs/HOBOExportStep2.png){fig-align='center' width=70%}
