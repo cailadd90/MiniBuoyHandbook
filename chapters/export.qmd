@@ -74,16 +74,16 @@ To export data from the Pendant G Data Logger:
 4. Press `OK`.
 
 
-![](figs/HOBOExportStep2.png){fig-align='center' width=90%}
+![](figs/HOBOExportStep2.png){fig-align='center'}
 
 5. Connect your Pendant sensor to it's base station and click on the "Readout device" icon ![](figs/ReadOutDevice.png){width=4%}
 
 6. Once the data has downloaded, a `Plot Setup` window will pop up, within `Select series to plot` ensure `X Accel` box is checked and all other boxes are unchecked.
 
-![](figs/HOBOExportStep3.png){fig-align='center'}
+![](figs/HOBOExportStep3s.png){fig-align='center'}
 
 7. Select `Plot`
-8. Select `Export` 
+8. Select `Export` ![](figs/ExportIcon.png){width=4%}
 9. Save the file as `.csv`
 
 ![](figs/HOBOExportStep4.png){fig-align='center' width=70%}
