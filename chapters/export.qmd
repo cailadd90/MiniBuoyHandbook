@@ -66,22 +66,24 @@ The data has now been exported. Quit MSR and disconnect the logger.
 To export data from the Pendant G Data Logger:
 
 1. Open the HOBOware software
-2. Open the preferences window by selecting `HOBOware` and `Preferences...`
+2. For Mac OS, Open the preferences window by selecting `HOBOware` and then `Settings...`. On Windows, after opening the Hobo software, select `File` and  then `Preferences...`.
 
-![](figs/HOBOExportStep1.png){fig-align='center' width=70%}
+![](figs/HOBOExportStep1.png){fig-align='center' width=100%}
 
-3. Select `General`, `Export Settings`, and ensure that `Separate date and time into two columns` is unchecked
-4. Press `OK`
+3. Select `General`, `Export Settings`, and ensure that `Separate date and time into two columns` is unchecked and set `Time format` to `24-Hour`.
+4. Press `OK`.
 
-![](figs/HOBOExportStep2.png){fig-align='center' width=70%}
 
-5. Select `Plot Setup`
-6. Check the `X Accel` box
+![](figs/HOBOExportStep2.png){fig-align='center'}
 
-![](figs/HOBOExportStep3.png){fig-align='center'}
+5. Connect your Pendant sensor to it's base station and click on the "Readout device" icon ![](figs/ReadOutDevice.png){width=4%}
+
+6. Once the data has downloaded, a `Plot Setup` window will pop up, within `Select series to plot` ensure `X Accel` box is checked and all other boxes are unchecked.
+
+![](figs/HOBOExportStep3s.png){fig-align='center'}
 
 7. Select `Plot`
-8. Select `Export` 
+8. Select `Export` ![](figs/ExportIcon.png){width=4%}
 9. Save the file as `.csv`
 
 ![](figs/HOBOExportStep4.png){fig-align='center' width=70%}
